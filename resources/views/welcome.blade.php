@@ -104,15 +104,23 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
-
-                        <li>
-                            <a class="smooth-menu" href="#about">A Propos</a>
-                        </li>
-                        <li>
-                            <a class="smooth-menu" href="#features">RECOMPENSES</a>
-                        </li>
-                        <li>
-                            <a class="smooth-menu" href="#actualite">ACTUALITES</a>
+                        <li class="list-social">
+                            <div class="social">
+                                <ul>
+                                    <li class="twitter">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li class="pinterest">
+                                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="vimeo">
+                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <a class="smooth-menu" href="#team">PANELISTES</a>

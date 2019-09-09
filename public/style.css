@@ -720,6 +720,51 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   margin-top: -5px;
 }
 
+/**social style navbar**/
+nav.navbar li.list-social {
+  line-height: 6
+}
+
+nav.navbar .social li {
+  display: inline-block;
+}
+
+nav.navbar .social li a {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 2px;
+  text-align: center;
+  width: 40px;
+}
+
+nav.navbar .social li.twitter a {
+  background-color: #00b6f1;
+}
+
+nav.navbar .social li.pinterest a {
+  background-color: #bd081c;
+}
+
+nav.navbar .social li.facebook a {
+  background-color: #3b5998;
+}
+
+nav.navbar .social li.g-plus a {
+  background-color: #df4a32;
+}
+
+nav.navbar .social li.vimeo a {
+  background-color: #1ab7ea;
+}
+
+nav.navbar .social li.instagram a {
+  background-color: #cd486b;
+}
 
 /* ============================================================== 
      # Bradcrumb 
