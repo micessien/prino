@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
-use App\Project;
-use Auth;
 
 class ProjectController extends Controller
 {
@@ -16,7 +13,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return view('projects.create',array('user' => Auth::user()));
+        return view('projects.create');
     }
 
     /**
@@ -27,7 +24,7 @@ class ProjectController extends Controller
     public function create()
     {
         //
-        return view('projects.create',array('user' => Auth::user()));
+        return view('projects.create');
 
     }
 
@@ -67,28 +64,7 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        $project = new Project();
-
-        $inputs = $request->only('entite', 'categorie', 'adresse', 'boitepostal',
-            'ville', 'nombremploye', 'descriptifentreprise', 'chiffredaffaire', 'prixremporte','userid');
-
-
-        $project->entite = $inputs['entite'];
-        $project->categorie = $inputs['categorie'];
-        $project->adresse = $inputs['adresse'];
-        $project->boitepostal = $inputs['boitepostal'];
-        $project->ville = $inputs['ville'];
-        $project->nombremploye = $inputs['nombremploye'];
-        $project->descriptifentreprise = $inputs['descriptifentreprise'];
-        $project->chiffredaffaire = $inputs['chiffredaffaire'];
-        $project->prixremporte = $inputs['prixremporte'];
-        $project->userid = $inputs['userid'];
-        $project->siteweb = '';
-        $project->facebook = '';
-        $project->twitter = '';
-        $project->save();
-
-        return view('projects.create-step-2');
+        //
     }
 
     /**
