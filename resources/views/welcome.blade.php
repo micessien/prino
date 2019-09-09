@@ -265,55 +265,6 @@
     </div>
     <!-- End Features -->
 
-    <!-- Start Fun Factor 
-    ============================================= -->
-    <div class="fun-factor-area shadow dark bg-fixed text-light default-padding" style="background-image: url(assets/img/banner/7.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 fun-fact-items">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 item">
-                            <div class="fun-fact">
-                                <div class="timer" data-to="230" data-speed="5000"></div>
-                                <span class="medium">Nombres d'inscrits</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 item">
-                            <div class="fun-fact">
-                                <div class="timer" data-to="89" data-speed="5000"></div>
-                                <span class="medium">Professionels</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 item">
-                            <div class="fun-fact">
-                                <div class="timer" data-to="50" data-speed="5000"></div>
-                                <span class="medium">Exposants</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 subscribe">
-                    <h3>Notre NewsLetter</h3>
-                    <p>
-                        Ne manquez rien de cette grande messe de l'innovation 
-                    </p>
-                    <form action="#">
-                        <div class="input-group stylish-input-group">
-                            <input type="email" placeholder="Entrez votre e-mail ici" class="form-control" name="email">
-                            <span class="input-group-addon">
-                                <button type="submit">
-                                    <i class="fa fa-paper-plane"></i>
-                                </button>  
-                            </span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Fun Factor -->
-
-
     <!-- Start Team  
     ============================================= -->
     <div id="team" class="team-area default-padding bottom-less">
@@ -441,8 +392,6 @@
         </div>
     </div>
     <!-- End Team -->
-
-
 
     <!-- Start Faq  
     ============================================= -->
