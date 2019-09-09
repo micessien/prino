@@ -107,17 +107,14 @@
                         <li class="list-social">
                             <div class="social">
                                 <ul>
-                                    <li class="twitter">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/mpeerciv/" target="_blank"><i class="fab fa-facebook"></i></a>
                                     </li>
-                                    <li class="pinterest">
-                                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                                    <li class="twitter">
+                                        <a href="https://twitter.com/mpederciv" target="_blank"><i class="fab fa-twitter"></i></a>
                                     </li>
                                     <li class="instagram">
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li class="vimeo">
-                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                                        <a href="https://www.instagram.com/mpeerciv/" target="_blank"><i class="fab fa-instagram"></i></a>
                                     </li>
                                 </ul>
                             </div>
