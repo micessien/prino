@@ -231,9 +231,10 @@
                                         <i class="flaticon-television"></i>
                                     </div>
                                     <div class="info">
-                                        <h4>Prix des Hydrocarbures</h4>
+                                        <h4>Prix Innovation Hydrocarbures</h4>
                                         <p>
-                                            Esteem garden men yet shy course. Consulted up my tolerably
+                                            Gagner 10.000.000 FCFA et obtenez un accompagnement pour votre projet ! ça vous dit ?<br>
+                                            <a href="#">Je me lance</a>
                                         </p>
                                     </div>
                                 </div>
@@ -244,9 +245,10 @@
                                         <i class="flaticon-customer-service"></i>
                                     </div>
                                     <div class="info">
-                                        <h4>Prix Energie et Energie Renouvelable.</h4>
+                                        <h4>Prix Innovation Energie</h4>
                                         <p>
-                                            Affronting everything discretion men now own did. Still round
+                                            Gagner 10.000.000 FCFA et obtenez un accompagnement pour votre projet ! ça vous dit ?<br>
+                                            <a href="#">Je me lance</a>
                                         </p>
                                     </div>
                                 </div>
