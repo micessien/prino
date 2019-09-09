@@ -24,6 +24,7 @@ Route::post('profile', 'UserController@update_avatar');
 
 
 Route::get('/projects/create', 'ProjectController@create')->name('projects.create');
+Route::post('/projects/create', 'ProjectController@store')->name('projects.store');
 Route::get('/projects/create-step-2', 'ProjectController@createstep2')->name('projects.create-step-2');
 Route::get('/projects/create-step-3', 'ProjectController@createstep3')->name('projects.create-step-3');
 Route::get('/projects/create-step-4', 'ProjectController@createstep4')->name('projects.create-step-4');
