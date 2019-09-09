@@ -710,7 +710,7 @@
 
      <!-- Start Companies Area 
     ============================================= -->
-    <div class="companies-area default-padding">
+    <div class="bg-gray companies-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 info">
