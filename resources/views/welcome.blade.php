@@ -142,7 +142,7 @@
                         <div class="content">
                             <h1 style="font-size: 26px">PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES WEEKS </h1>
                             <p>
-                            « Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
+                                Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations.
                                 Le PIMPEER a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
                                 prodiges, en soutenant leurs projets et innovations technologiques inhérents aux secteurs
@@ -153,9 +153,9 @@
                                 Vous êtes jeunes, vous êtes une startup, une association, venez faire valoir votre savoir,
                                 votre talent pour une exploitation durable et à moindre coût des ressources énergétiques
                                 et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
-                                Côte d’Ivoire. »
+                                Côte d’Ivoire.
                             </P>                       
-                                <a class="btn circle btn-light border btn-md" href="register">M'inscrire</a>
+                            <a class="btn circle btn-light border btn-md" href="register">M'inscrire</a>
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
                                 <i class="fa fa-play"></i>
                             </a>
