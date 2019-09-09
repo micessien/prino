@@ -44,9 +44,7 @@
 
 <body>
 
-    <!-- Preloader Start -->
-    <div class="se-pre-con"></div>
-    <!-- Preloader Ends -->
+
 
     <!-- Header 
     ============================================= -->
@@ -97,8 +95,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo-light.png" height="98" width="200" class="logo logo-display" alt="Logo">
-                        <img src="assets/img/logo.png" height="98" width="200" class="logo logo-scrolled" alt="Logo">
+                        <img src="assets/img/logo-light.png" height="98" width="100" class="logo logo-display" alt="Logo">
+                        <img src="assets/img/logo.png" height="98" width="100" class="logo logo-scrolled" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -229,7 +227,7 @@
                             <h5>Telecharger Le reglement </h5>
                         </li>
                     </ul>
-                    <a href="#" class="btn circle btn-theme effect btn-md">Telecharger</a>
+                    <a href="http://prixinnovation.test/assets/pdf/ReglementPIMPEER.docx" class="btn circle btn-theme effect btn-md">Telecharger</a>
                 </div>
             </div>
         </div>
@@ -486,11 +484,11 @@
                 <!-- Star Video Faq -->
                 <div class="col-md-6 video-faq">
                     <div class="video">
-                        <img src="assets/img/about/1.jpg" alt="Thumb">
+                        <img src="assets/img/about/1.jpg" width="560" height="500" alt="Thumb">
                         <a class="popup-youtube light video-play-button" href="https://www.youtube.com/watch?v=owhuBrGIOsE">
                             <i class="fa fa-play"></i>
                         </a>
-                        <h4>Answer with video</h4>
+                        <h4>Le message de Monsieur le Mininstre</h4>
                     </div>
                 </div>
                 <!-- End Video Faq -->
@@ -819,7 +817,7 @@
                         <h4>Reseaux Sociaux</h4>
                         <ul class="social">
                             <li class="facebook">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/mpeerciv/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li class="twitter">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
