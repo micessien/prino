@@ -123,10 +123,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#team">PANELISTES</a>
-                        </li>
-                        <li>
-                            <a class="smooth-menu" href="#contact">contact</a>
+                            <a class="smooth-menu" href="javascript:void(0)">#PIMPEER</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
