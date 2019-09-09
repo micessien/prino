@@ -27,7 +27,6 @@ class CreateProjectTable extends Migration
             $table->string('siteweb');
             $table->string('facebook');
             $table->string('twitter');
-            $table->integer('userid');
             $table->timestamps();
         });
     }
