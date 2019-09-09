@@ -2,15 +2,16 @@
 <html lang="en">
 
 
+<!-- Mirrored from validthemes.com/themeforest/dostart/index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Sep 2019 21:12:43 GMT -->
 <head>
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES">
+    <meta name="description" content="Dostart - Startup Landing Page">
 
     <!-- ========== Page Title ========== -->
-    <title>PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES</title>
+    <title>Dostart - Startup Landing Page</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -60,33 +61,12 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav button theme">
                     <ul>
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('M \' Inscription') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
-                            </li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ url('/profile') }}"><i class="fa fa-btn fa-user"></i>Profile</a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
+                        <li>
+                            <a href="#">M'inscrire</a>
+                        </li>
+                        <li >
+                            <a href="#">Me Connecter</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- End Atribute Navigation -->
@@ -142,9 +122,8 @@
                         <div class="content">
                             <h1 style="font-size: 26px">PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES WEEKS </h1>
                             <p>
-                                encourager, soutenir et valoriser l’innovation technologique.    
-                            </P>                       
-                                <a class="btn circle btn-light border btn-md" href="register">M'inscrire</a>
+                                Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation technologique, sociétale et de service pour le bien-être des populations.                             
+                                <a class="btn circle btn-light border btn-md" href="#">M'inscrire</a>
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
                                 <i class="fa fa-play"></i>
                             </a>
@@ -152,8 +131,9 @@
                     </div>
                     <div class="col-md-8 col-md-offset-2">
                         <div class="banner banner-carousel owl-carousel owl-theme">
-                            <img alt="Thumb" src="assets/img/dashboard/1.png">
-                            <img alt="Thumb" src="assets/img/dashboard/2.png">
+                            <img alt="Thumb" src="assets/img/dashboard/1.jpg">
+                            <img alt="Thumb" src="assets/img/dashboard/2.jpg">
+                            <img alt="Thumb" src="assets/img/dashboard/3.jpg">
                         </div>
                     </div>
                 </div>
@@ -859,4 +839,5 @@
 
 </body>
 
+<!-- Mirrored from validthemes.com/themeforest/dostart/index-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Sep 2019 21:14:21 GMT -->
 </html>

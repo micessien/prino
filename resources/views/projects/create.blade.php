@@ -6,7 +6,7 @@
         Informations sur l’entité
 </div>
 
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form action="#" method="POST" enctype="multipart/form-data">
             {{ csrf_field()}}
 
             <div class="form-row">
@@ -80,7 +80,10 @@
                         </label>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Suivant</button>
-        </form>
 
+        </form>
+        <a href="projects/create-step-2">
+                <button  class="btn btn-primary">Suivant</button>
+           </a> 
+           
 @endsection
