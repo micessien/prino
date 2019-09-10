@@ -175,6 +175,26 @@ b, strong {
   font-weight: 900;
 }
 
+.margin-top-35 {
+  margin-top: 35px;
+}
+
+.padding-left-right {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.text-orange{
+  color: #E67924 !important;
+}
+
+.btn-orange{
+  background-color: #e6792c !important;
+  border: #d86f24 !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
 .btn.active, .btn:active {
   background-image: inherit !important;
 }
@@ -720,6 +740,51 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   margin-top: -5px;
 }
 
+/**social style navbar**/
+nav.navbar li.list-social {
+  line-height: 6
+}
+
+nav.navbar .social li {
+  display: inline-block;
+}
+
+nav.navbar .social li a {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 2px;
+  text-align: center;
+  width: 40px;
+}
+
+nav.navbar .social li.twitter a {
+  background-color: #00b6f1;
+}
+
+nav.navbar .social li.pinterest a {
+  background-color: #bd081c;
+}
+
+nav.navbar .social li.facebook a {
+  background-color: #3b5998;
+}
+
+nav.navbar .social li.g-plus a {
+  background-color: #df4a32;
+}
+
+nav.navbar .social li.vimeo a {
+  background-color: #1ab7ea;
+}
+
+nav.navbar .social li.instagram a {
+  background-color: #cd486b;
+}
 
 /* ============================================================== 
      # Bradcrumb 
@@ -886,7 +951,7 @@ body,
   display: inline-block;
   font-size: 20px;
   left: 0;
-  margin-bottom: 0 !important;
+  margin-bottom: 20px !important;
   margin-left: 20px;
   margin-right: 0 !important;
   margin-top: 0 !important;
@@ -1368,7 +1433,7 @@ body,
 }
 
 .about-area .default.info h2 {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
   margin-bottom: 20px;
 }
@@ -1475,7 +1540,7 @@ body,
 }
 
 .features-area .features-items .item {
-  padding: 15px 30px;
+  padding: 15px 8px;
 }
 
 .features-area.item-full .features-items .item {
@@ -3398,6 +3463,46 @@ footer.color-yellow .footer-bottom p a {
 
 .footer-bottom .link li a:hover {
   color: #E67924;
+}
+
+/** Modal **/
+.modal .modal-body h4{
+  margin-bottom: 55px !important;
+}
+
+.modal ul.list-inline li a{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.modal ul.list-inline li a{
+  font-weight: 500
+}
+
+.modal ul.list-inline li a:hover,
+.modal ul.list-inline li a:focus,
+.modal ul.list-inline li a:active{
+  color: #E67924
+}
+
+.modal ul.list-inline .icon{
+  margin-bottom: 8px;
+}
+
+.modal ul.list-inline .icon i {
+  border-radius: inherit;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -o-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+  color: #E67924;
+  display: inline-block;
+  font-size: 50px;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  text-align: center;
+  width: 80px;
 }
 
 /* ============================================================== 
