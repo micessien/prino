@@ -184,6 +184,9 @@ b, strong {
   padding-right: 40px;
 }
 
+.text-white{
+  color: #ffffff !important;
+}
 .text-orange{
   color: #E67924 !important;
 }

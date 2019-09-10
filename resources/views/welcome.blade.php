@@ -56,7 +56,7 @@
                     <ul>
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('S \' Inscription') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('S \'Inscrire') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
@@ -72,7 +72,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Déconnexion') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -138,20 +138,19 @@
                         <div class="content">
                             <!--made by vipul mirajkar thevipulm.appspot.com-->
                             <h1>
-                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTERE", "DU PETROLE DE L’ENERGIE ET", "DES ENERGIES RENOUVELABLES WEEKS" ]'>
+                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTERE", "DU PETROLE DE L’ENERGIE ET", "DES ENERGIES RENOUVELABLES" ]'>
                                     <span class="wrap"></span>
                                 </a>
                             </h1>
-                            <!-- <h1 style="font-size: 26px">PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES WEEKS </h1> -->
-                            <p>
+                            <p class="text-justify">
                                 Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
-                                technologique, sociétale et de service pour le bien-être des populations.
+                                technologique, sociétale et de service pour le bien-être des populations. <br>
                                 Le PIMPEER a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
                                 prodiges, en soutenant leurs projets et innovations technologiques inhérents aux secteurs
-                                Hydrocarbures et Energies.
-                                Ce prix de l’innovation est attribué dans chacune des catégories suivantes :
-                                # innovation hydrocarbures
-                                # innovation Energie
+                                Hydrocarbures et Energies. <br><br>
+                                Ce prix de l’innovation est attribué dans chacune des catégories suivantes : <br>
+                                # innovation hydrocarbures <br>
+                                # innovation Energie <br><br>
                                 Vous êtes jeunes, vous êtes une startup, une association, venez faire valoir votre savoir,
                                 votre talent pour une exploitation durable et à moindre coût des ressources énergétiques
                                 et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
@@ -161,9 +160,15 @@
                             <button type="button" class="btn circle btn-light margin-top-35 border btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
                             S'inscrire
                             </button>
-                            <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
+                            <p>
+                                <ul class="list-inline">
+                                <li class="text-white">Déjà inscrit ?</li>
+                                <li><a href="{{ route('login') }}" class="text-orange">Connectez-vous ici</a></li>
+                                </ul>
+                            </p>
+                            <!-- <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
                                 <i class="fa fa-play"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                     <!-- <div class="col-md-8 col-md-offset-2">
@@ -225,7 +230,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
                         <h2>Programme <span>#PIMPEER</span></h2>
-                        <!-- <h4>Les questions les plus posées et leurs réponses</h4> -->
+                        <h4>*Les dates sont susceptibles d’être modifiées</h4>
                     </div>
                 </div>
             </div>
