@@ -156,7 +156,7 @@
                                 Côte d’Ivoire.
                             </p>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn circle btn-light border btn-lg" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="btn circle btn-light margin-top-35 border btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
                             S'inscrire
                             </button>
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
