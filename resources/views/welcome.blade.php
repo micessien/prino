@@ -91,8 +91,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="assets/img/logo-light.png" height="98" width="100" class="logo logo-display" alt="Logo">
-                        <img src="assets/img/logo.png" height="98" width="100" class="logo logo-scrolled" alt="Logo">
+                        <img src="assets/img/logo-pimpeer.png" height="98" width="100" class="logo logo-display" alt="Logo">
+                        <img src="assets/img/logo-pimpeer.png" height="98" width="100" class="logo logo-scrolled" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
