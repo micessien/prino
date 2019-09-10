@@ -141,7 +141,13 @@
                 <div class="content-box video-popup">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="content">
-                            <h1 style="font-size: 26px">PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES WEEKS </h1>
+                            <!--made by vipul mirajkar thevipulm.appspot.com-->
+                            <h1>
+                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTERE", "DU PETROLE DE L’ENERGIE ET", "DES ENERGIES RENOUVELABLES WEEKS" ]'>
+                                    <span class="wrap"></span>
+                                </a>
+                            </h1>
+                            <!-- <h1 style="font-size: 26px">PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES WEEKS </h1> -->
                             <p>
                                 Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations.
@@ -663,6 +669,7 @@
     <script src="assets/js/count-to.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/typewriter.js"></script>
 
 </body>
 
