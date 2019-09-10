@@ -184,6 +184,10 @@ b, strong {
   padding-right: 40px;
 }
 
+.text-orange{
+  color: #E67924 !important;
+}
+
 .btn-orange{
   background-color: #e6792c !important;
   border: #d86f24 !important;

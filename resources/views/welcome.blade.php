@@ -185,7 +185,7 @@
                     <img src="assets/img/work/4.png" alt="Thumb">
                 </div>
                 <div class="col-md-7 default info">
-                    <h4>A PROPOS</h4>
+                    <h2>A <span class="text-orange">PROPOS</span></h2>
                     <h4 style="color: green">LES PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES</h4>
                     <p>
                                             
