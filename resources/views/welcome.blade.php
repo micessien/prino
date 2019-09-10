@@ -678,8 +678,14 @@
                     </h4>
                     <p>
                         <ul class="list-inline">
-                            <li><a href="{{ route('register') }}">Prix Innovation Hydrocarbures</a></li>
-                            <li><a href="{{ route('register') }}">Prix Innovation Energie</a></li>
+                            <li>
+                                <div class="icon"><i class="flaticon-television"></i></div>
+                                <a href="{{ route('register') }}">Prix Innovation Hydrocarbures</a>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="flaticon-customer-service"></i></div>
+                                <a href="{{ route('register') }}">Prix Innovation Energie</a>
+                            </li>
                         </ul>
                     </p>
                 </div>
