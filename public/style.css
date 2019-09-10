@@ -198,6 +198,19 @@ b, strong {
   font-weight: 600;
 }
 
+.btn-vert{
+  background-color: #85b921 !important;
+  border: #6e981d !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+.btn-inscrire {
+  width: 50%;
+  height: 60px;
+  font-size: 20px !important;
+}
+
 .btn.active, .btn:active {
   background-image: inherit !important;
 }

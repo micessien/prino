@@ -138,7 +138,7 @@
                         <div class="content">
                             <!--made by vipul mirajkar thevipulm.appspot.com-->
                             <h1>
-                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTERE", "DU PETROLE DE L’ENERGIE ET", "DES ENERGIES RENOUVELABLES" ]'>
+                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION #PIMPEER", "prixinnovation.energie.gouv.ci" ]'>
                                     <span class="wrap"></span>
                                 </a>
                             </h1>
@@ -157,7 +157,7 @@
                                 Côte d’Ivoire.
                             </p>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn circle btn-light margin-top-35 border btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
+                            <button type="button" class="btn circle btn-primary btn-vert btn-inscrire btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
                             S'inscrire
                             </button>
                             <p>
