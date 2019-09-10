@@ -175,6 +175,26 @@ b, strong {
   font-weight: 900;
 }
 
+.margin-top-35 {
+  margin-top: 35px;
+}
+
+.padding-left-right {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.text-orange{
+  color: #E67924 !important;
+}
+
+.btn-orange{
+  background-color: #e6792c !important;
+  border: #d86f24 !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
 .btn.active, .btn:active {
   background-image: inherit !important;
 }
@@ -1413,7 +1433,7 @@ body,
 }
 
 .about-area .default.info h2 {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
   margin-bottom: 20px;
 }
@@ -3443,6 +3463,46 @@ footer.color-yellow .footer-bottom p a {
 
 .footer-bottom .link li a:hover {
   color: #E67924;
+}
+
+/** Modal **/
+.modal .modal-body h4{
+  margin-bottom: 55px !important;
+}
+
+.modal ul.list-inline li a{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.modal ul.list-inline li a{
+  font-weight: 500
+}
+
+.modal ul.list-inline li a:hover,
+.modal ul.list-inline li a:focus,
+.modal ul.list-inline li a:active{
+  color: #E67924
+}
+
+.modal ul.list-inline .icon{
+  margin-bottom: 8px;
+}
+
+.modal ul.list-inline .icon i {
+  border-radius: inherit;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -o-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+  color: #E67924;
+  display: inline-block;
+  font-size: 50px;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  text-align: center;
+  width: 80px;
 }
 
 /* ============================================================== 

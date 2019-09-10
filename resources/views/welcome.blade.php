@@ -26,6 +26,7 @@
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
+    <link href="assets/css/roadmap.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
@@ -44,23 +45,18 @@
 
 <body>
 
-
-
     <!-- Header 
     ============================================= -->
     <header id="home">
-
         <!-- Start Navigation -->
         <nav class="navbar navbar-default active-border navbar-fixed navbar-transparent white bootsnav">
-
             <div class="container">
-
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav button theme">
                     <ul>
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('M \' Inscription') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('S \' Inscription') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
@@ -134,13 +130,19 @@
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/1.jpg);">
+    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/10.jpg);">
         <div class="container">
             <div class="row">
                 <div class="content-box video-popup">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="content">
-                            <h1 style="font-size: 26px">PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES WEEKS </h1>
+                            <!--made by vipul mirajkar thevipulm.appspot.com-->
+                            <h1>
+                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTERE", "DU PETROLE DE L’ENERGIE ET", "DES ENERGIES RENOUVELABLES WEEKS" ]'>
+                                    <span class="wrap"></span>
+                                </a>
+                            </h1>
+                            <!-- <h1 style="font-size: 26px">PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES WEEKS </h1> -->
                             <p>
                                 Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations.
@@ -154,8 +156,11 @@
                                 votre talent pour une exploitation durable et à moindre coût des ressources énergétiques
                                 et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
                                 Côte d’Ivoire.
-                            </P>                       
-                            <a class="btn circle btn-light border btn-md" href="register">M'inscrire</a>
+                            </p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn circle btn-light margin-top-35 border btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
+                            S'inscrire
+                            </button>
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
                                 <i class="fa fa-play"></i>
                             </a>
@@ -182,7 +187,7 @@
                     <img src="assets/img/work/4.png" alt="Thumb">
                 </div>
                 <div class="col-md-7 default info">
-                    <h4>A PROPOS</h4>
+                    <h2>A <span class="text-orange">PROPOS</span></h2>
                     <h4 style="color: green">LES PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES</h4>
                     <p>
                                             
@@ -202,7 +207,7 @@
                             </span>
                         </li>
                         <li>
-                            <h5>Telecharger Le reglement </h5>
+                            <h5>Télécharger Le reglement </h5>
                         </li>
                     </ul>
                     <a href="http://prixinnovation.test/assets/pdf/ReglementPIMPEER.docx" class="btn circle btn-theme effect btn-md">Telecharger</a>
@@ -211,6 +216,87 @@
         </div>
     </div>
     <!-- End About -->
+
+        <!-- Start Faq  
+    ============================================= -->
+    <div class="faq-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-center">
+                        <h2>Programme <span>#PIMPEER</span></h2>
+                        <!-- <h4>Les questions les plus posées et leurs réponses</h4> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="timeline-centered">
+    
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T03:45"><span>08H30min</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-success">
+                                <i class="entypo-feather"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Reception</a> <span>des participants</span></h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda doloribus placeat voluptate odit officiis dolorum porro magnam. Error facilis amet iusto necessitatibus saepe et obcaecati eveniet vitae expedita voluptatem?</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-entry left-aligned">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T03:45"><span>09H</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-secondary">
+                                <i class="entypo-suitcase"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Mot de bienvenue</a></h2>
+                                <p>Par le ministre du <strong>MPEER</strong>.</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-09T13:22"><span>11H50min</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-info">
+                                <i class="entypo-location"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Mot de bienvenue</a> <span>du Ministre</span> <a href="#">du MPEER</a></h2>
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae possimus dolorum? Amet, doloribus nihil fugiat accusantium maxime exercitationem minima perferendis excepturi officiis consequatur dolorum, voluptatem repellat est modi minus.</blockquote>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-entry left-aligned">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T03:45"><span>14H45</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-warning">
+                                <i class="entypo-camera"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Annonce des vainqueurs</a> <span>du concours du</span> <a href="#">#PIMPEER</a></h2>
+                                <blockquote>repart avec 10 000 000CFA</blockquote>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-entry begin">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                                <i class="entypo-flight"></i>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Faq  -->
 
     <!-- Start Features 
     ============================================= -->
@@ -236,7 +322,9 @@
                                         <h4>Prix Innovation Hydrocarbures</h4>
                                         <p>
                                             Gagner 10.000.000 FCFA et obtenez un accompagnement pour votre projet ! ça vous dit ?<br>
-                                            <a href="#">Je me lance</a>
+                                            <button type="button" class="btn btn-primary btn-orange margin-top-35 btn-lg" data-toggle="modal" data-target="#myModal">
+                                            Je me lance
+                                            </button>
                                         </p>
                                     </div>
                                 </div>
@@ -250,7 +338,9 @@
                                         <h4>Prix Innovation Energie</h4>
                                         <p>
                                             Gagner 10.000.000 FCFA et obtenez un accompagnement pour votre projet ! ça vous dit ?<br>
-                                            <a href="#">Je me lance</a>
+                                            <button type="button" class="btn btn-primary btn-orange margin-top-35 btn-lg" data-toggle="modal" data-target="#myModal">
+                                            Je me lance
+                                            </button>
                                         </p>
                                     </div>
                                 </div>
@@ -268,134 +358,6 @@
         </div>
     </div>
     <!-- End Features -->
-
-    <!-- Start Team  
-    ============================================= -->
-    <div id="team" class="team-area default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="site-heading text-center">
-                        <h2>Nos <span>Panelistes</span></h2>
-                        <h4>Decouvrer nos brillants panelistes</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="team-items">
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/7.jpg" height="300" width="400"  alt="Thumb">
-                                <div class="overlay">
-                                    <h4>I love my Studio</h4>
-                                    <p>
-                                        Jointure goodness interest debating did outweigh. Is time from them full my gone in went Of no introduced
-                                    </p>
-                                    <div class="social">
-                                        <ul>
-                                            <li class="twitter">
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="pinterest">
-                                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                                            </li>
-                                            <li class="instagram">
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                            </li>
-                                            <li class="vimeo">
-                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <span class="message">
-                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
-                                </span>
-                                <h4>Ahmed Kamal</h4>
-                                <span>Chairman of Softing</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/9.jpg" height="300" width="400" alt="Thumb">
-                                <div class="overlay">
-                                    <h4>Connecting People</h4>
-                                    <p>
-                                        Jointure goodness interest debating did outweigh. Is time from them full my gone in went Of no introduced
-                                    </p>
-                                    <div class="social">
-                                        <ul>
-                                            <li class="twitter">
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="pinterest">
-                                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                                            </li>
-                                            <li class="instagram">
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                            </li>
-                                            <li class="vimeo">
-                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <span class="message">
-                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
-                                </span>
-                                <h4>Drunal Park</h4>
-                                <span>Manager of Softing</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/team/8.jpg" height="300" width="400" alt="Thumb">
-                                <div class="overlay">
-                                    <h4>Network Builder</h4>
-                                    <p>
-                                        Jointure goodness interest debating did outweigh. Is time from them full my gone in went Of no introduced
-                                    </p>
-                                    <div class="social">
-                                        <ul>
-                                            <li class="twitter">
-                                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li class="pinterest">
-                                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                                            </li>
-                                            <li class="instagram">
-                                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                            </li>
-                                            <li class="vimeo">
-                                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <span class="message">
-                                    <a href="#"><i class="fas fa-envelope-open"></i></a>
-                                </span>
-                                <h4>Munia Ankor</h4>
-                                <span>Founder of Softing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Team -->
 
     <!-- Start Faq  
     ============================================= -->
@@ -656,8 +618,36 @@
     </div>
     <!-- End Contact -->
 
-
-
+    <!-- Start modal inscription -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Le choix du Prix de soumission</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>
+                        Bienvenu(e) sur le site du Prix d'innovation du <strong>MPEER</strong> <br>
+                        Veuillez sélectionner votre catégorie
+                    </h4>
+                    <p>
+                        <ul class="list-inline">
+                            <li>
+                                <div class="icon"><i class="flaticon-television"></i></div>
+                                <a href="{{ route('register') }}">Prix Innovation Hydrocarbures</a>
+                            </li>
+                            <li>
+                                <div class="icon"><i class="flaticon-customer-service"></i></div>
+                                <a href="{{ route('register') }}">Prix Innovation Energie</a>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.End modal inscription -->
 
 
     <!-- jQuery Frameworks
@@ -674,6 +664,7 @@
     <script src="assets/js/count-to.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/typewriter.js"></script>
 
 </body>
 
