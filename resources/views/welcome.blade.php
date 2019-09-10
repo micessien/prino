@@ -45,17 +45,12 @@
 
 <body>
 
-
-
     <!-- Header 
     ============================================= -->
     <header id="home">
-
         <!-- Start Navigation -->
         <nav class="navbar navbar-default active-border navbar-fixed navbar-transparent white bootsnav">
-
             <div class="container">
-
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav button theme">
                     <ul>
@@ -212,7 +207,7 @@
                             </span>
                         </li>
                         <li>
-                            <h5>Telecharger Le reglement </h5>
+                            <h5>Télécharger Le reglement </h5>
                         </li>
                     </ul>
                     <a href="http://prixinnovation.test/assets/pdf/ReglementPIMPEER.docx" class="btn circle btn-theme effect btn-md">Telecharger</a>
