@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES') }}</title>
+    <title>PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
