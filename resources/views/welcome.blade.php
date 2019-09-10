@@ -60,7 +60,7 @@
                     <ul>
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('M \' Inscription') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('S \' Inscription') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
@@ -155,7 +155,11 @@
                                 et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
                                 Côte d’Ivoire.
                             </P>                       
-                            <a class="btn circle btn-light border btn-md" href="register">M'inscrire</a>
+                            <a class="btn circle btn-light border btn-md" href="register">S'inscrire</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            Launch demo modal
+                            </button>
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
                                 <i class="fa fa-play"></i>
                             </a>
@@ -656,8 +660,34 @@
     </div>
     <!-- End Contact -->
 
-
-
+    <!-- Start modal inscription -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Le choix du Prix de soumission</h4>
+            </div>
+            <div class="modal-body text-center">
+                <h4>
+                    Bienvenu(e) sur le site du Prix d'innovation du <strong>MPEER</strong> <br>
+                    Veuillez sélectionner votre catégorie
+                </h4>
+                <p>
+                    <ul class="list-inline">
+                        <li><a href="#">Prix Innovation Hydrocarbures</a></li>
+                        <li><a href="#">Prix Innovation Energie</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.End modal inscription -->
 
 
     <!-- jQuery Frameworks
