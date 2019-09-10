@@ -154,11 +154,10 @@
                                 votre talent pour une exploitation durable et à moindre coût des ressources énergétiques
                                 et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
                                 Côte d’Ivoire.
-                            </P>                       
-                            <a class="btn circle btn-light border btn-md" href="register">S'inscrire</a>
+                            </p>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                            Launch demo modal
+                            <button type="button" class="btn circle btn-light border btn-lg" data-toggle="modal" data-target="#myModal">
+                            S'inscrire
                             </button>
                             <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
                                 <i class="fa fa-play"></i>
