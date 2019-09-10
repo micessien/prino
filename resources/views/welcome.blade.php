@@ -239,7 +239,9 @@
                                         <h4>Prix Innovation Hydrocarbures</h4>
                                         <p>
                                             Gagner 10.000.000 FCFA et obtenez un accompagnement pour votre projet ! ça vous dit ?<br>
-                                            <a href="#">Je me lance</a>
+                                            <button type="button" class="btn btn-primary btn-orange margin-top-35 btn-lg" data-toggle="modal" data-target="#myModal">
+                                            Je me lance
+                                            </button>
                                         </p>
                                     </div>
                                 </div>
@@ -253,7 +255,9 @@
                                         <h4>Prix Innovation Energie</h4>
                                         <p>
                                             Gagner 10.000.000 FCFA et obtenez un accompagnement pour votre projet ! ça vous dit ?<br>
-                                            <a href="#">Je me lance</a>
+                                            <button type="button" class="btn btn-primary btn-orange margin-top-35 btn-lg" data-toggle="modal" data-target="#myModal">
+                                            Je me lance
+                                            </button>
                                         </p>
                                     </div>
                                 </div>

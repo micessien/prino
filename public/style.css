@@ -184,6 +184,13 @@ b, strong {
   padding-right: 40px;
 }
 
+.btn-orange{
+  background-color: #e6792c !important;
+  border: #d86f24 !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
 .btn.active, .btn:active {
   background-image: inherit !important;
 }
