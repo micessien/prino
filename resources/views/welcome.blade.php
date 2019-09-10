@@ -26,6 +26,7 @@
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
+    <link href="assets/css/roadmap.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
@@ -214,6 +215,87 @@
         </div>
     </div>
     <!-- End About -->
+
+        <!-- Start Faq  
+    ============================================= -->
+    <div class="faq-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="site-heading text-center">
+                        <h2>Programme <span>#PIMPEER</span></h2>
+                        <!-- <h4>Les questions les plus posées et leurs réponses</h4> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="timeline-centered">
+    
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T03:45"><span>08H30min</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-success">
+                                <i class="entypo-feather"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Reception</a> <span>des participants</span></h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda doloribus placeat voluptate odit officiis dolorum porro magnam. Error facilis amet iusto necessitatibus saepe et obcaecati eveniet vitae expedita voluptatem?</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-entry left-aligned">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T03:45"><span>09H</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-secondary">
+                                <i class="entypo-suitcase"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Mot de bienvenue</a></h2>
+                                <p>Par le ministre du <strong>MPEER</strong>.</p>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-entry">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-09T13:22"><span>11H50min</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-info">
+                                <i class="entypo-location"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Mot de bienvenue</a> <span>du Ministre</span> <a href="#">du MPEER</a></h2>
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae possimus dolorum? Amet, doloribus nihil fugiat accusantium maxime exercitationem minima perferendis excepturi officiis consequatur dolorum, voluptatem repellat est modi minus.</blockquote>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-entry left-aligned">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time" datetime="2014-01-10T03:45"><span>14H45</span> <span>Vendredi</span></time>
+                            <div class="timeline-icon bg-warning">
+                                <i class="entypo-camera"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2><a href="#">Annonce des vainqueurs</a> <span>du concours du</span> <a href="#">#PIMPEER</a></h2>
+                                <blockquote>repart avec 10 000 000CFA</blockquote>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-entry begin">
+                        <div class="timeline-entry-inner">
+                            <div class="timeline-icon" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);">
+                                <i class="entypo-flight"></i>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Faq  -->
 
     <!-- Start Features 
     ============================================= -->
