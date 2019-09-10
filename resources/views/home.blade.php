@@ -42,7 +42,7 @@
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                       <a class="dropdown-item" href="#">
                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Profile
+                        Profil
                       </a>
       
                       <div class="dropdown-divider"></div>
@@ -109,7 +109,7 @@
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
                           <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Mon Profile</div>
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Mon Profil</div>
 
                           </div>
                           <div class="col-md-12 text-center">

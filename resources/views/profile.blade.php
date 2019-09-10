@@ -16,7 +16,7 @@
                 </div> 
 
                 <div class="form-group">
-                        <label for="prenom">Votre Nom</label>
+                        <label for="prenom">Votre Prénom</label>
                         <input type="prenom" class="form-control" id="prenom" aria-describedby="prenom" value="{{ $user->prenom }}" placeholder="Entrer votre prenom">
                 </div> 
 
