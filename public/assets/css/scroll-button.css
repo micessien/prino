@@ -6,9 +6,10 @@
     z-index: 99;
     font-size: 15px;
     font-weight: 500;
+    text-transform: uppercase;
     border: none;
     outline: none;
-    background-color: #6e981d;
+    background-color: #e6792c;
     color: white;
     cursor: pointer;
     padding: 10px 25px;
@@ -23,9 +24,10 @@
     z-index: 99;
     font-size: 15px;
     font-weight: 500;
+    text-transform: uppercase;
     border: none;
     outline: none;
-    background-color: #6e981d;
+    background-color: #e6792c;
     color: white;
     cursor: pointer;
     padding: 10px 25px;

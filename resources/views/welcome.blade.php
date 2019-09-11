@@ -61,28 +61,32 @@
     <div class="bg-gray companies-area default-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 info">
-                    <h3>Nos Partenaires</h3>
-                    <p>
-                        Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.
-                    </p>
+                <div class="col-md-12">
+                    <div class="site-heading text-center">
+                        <h2>STRUCTURES <span>PARTENAIRE</span></h2>
+                    </div>
                 </div>
-                <div class="col-md-6 clients">
+            </div>
+            <div class="row">
+                <div class="col-md-12 clients">
                     <div class="clients-items owl-carousel owl-theme text-center">
                         <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/1.png" height="90" width="200" alt="Clients"></a>
+                            <a href="#"><img src="assets/img/clients/ci-energie.JPG" height="90" width="200" alt="Clients"></a>
                         </div>
                         <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/2.png" height="90" width="200" alt="Clients"></a>
+                            <a href="#"><img src="assets/img/clients/dgh.PNG" height="90" width="200" alt="Clients"></a>
                         </div>
                         <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/3.png" height="90" width="200" alt="Clients"></a>
+                            <a href="#"><img src="assets/img/clients/anare-ci.PNG" height="90" width="200" alt="Clients"></a>
                         </div>
                         <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/4.jpg" height="90" width="200" alt="Clients"></a>
+                            <a href="#"><img src="assets/img/clients/gestoci.JPG" height="90" width="200" alt="Clients"></a>
                         </div>
-
-
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/petroci.PNG" height="90" width="200" alt="Clients"></a>
+                        </div>
+                        <div class="single-item">
+                            <a href="#"><img src="assets/img/clients/sir.PNG" height="90" width="200" alt="Clients"></a>
                         </div>
                     </div>
                 </div>

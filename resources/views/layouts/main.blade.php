@@ -149,6 +149,26 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/typewriter.js"></script>
 
+    <script>
+    $('.owl-carousel').owlCarousel({
+        autoplay:true,
+        rtl:true,
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+</script>
 </body>
 
 </html>
