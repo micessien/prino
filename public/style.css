@@ -3503,21 +3503,29 @@ footer.color-yellow .footer-bottom p a {
 /** Modal **/
 .modal .modal-body h4{
   margin-bottom: 55px !important;
+  margin-top: 55px;
+  font-size: 40px;
+}
+
+.modal ul.list-inline {
+  margin-top: 10% !important;
+}
+
+.modal ul.list-inline li {
+  padding-right: 35px !important;
+  padding-left: 35px !important;
 }
 
 .modal ul.list-inline li a{
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.modal ul.list-inline li a{
+  font-size: 20px !important;
+  padding: 20px 80px;
   font-weight: 500
 }
 
 .modal ul.list-inline li a:hover,
 .modal ul.list-inline li a:focus,
 .modal ul.list-inline li a:active{
-  color: #E67924
+  color: #ffffff
 }
 
 .modal ul.list-inline .icon{
@@ -3678,7 +3686,8 @@ footer.demo .copyright {
 }
 
 .modal-header {
-  background-color: #85b921;
+  /* background-color: #85b921; */
+  border-bottom: none;
 }
 
 .modal-header .close {
