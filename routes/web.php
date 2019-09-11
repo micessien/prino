@@ -12,13 +12,16 @@ use App\Project;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:clear');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('config:cache');
+    return 'DONE'; //Return anything
+});
 
 Route::get('/', function () {
     return view('welcome');
 });
-
-
-
 
 // Route::get('/projects/create', function () {
 
@@ -26,9 +29,6 @@ Route::get('/', function () {
 //     echo $user->projects->user_id;
 
 // });
-
-
-
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
