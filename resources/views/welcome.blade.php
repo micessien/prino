@@ -3,7 +3,7 @@
 @section('content')
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/10.jpg);">
+    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/bg-palm-1.jpg);">
         <div class="container">
             <div class="row">
                 <div class="content-box video-popup">
@@ -15,7 +15,7 @@
                                     <span class="wrap"></span>
                                 </a>
                             </h1>
-                            <p class="text-justify">
+                            <p class="text-justify text-black text-600">
                                 Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations. <br>
                                 Le PIMPEER a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou

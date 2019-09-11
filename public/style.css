@@ -195,6 +195,14 @@ b, strong {
   padding-bottom: 50px;
 }
 
+.text-600{
+  font-weight: 600 !important
+}
+
+.text-black {
+  color: #323a45 !important
+}
+
 .text-white{
   color: #ffffff !important;
 }
