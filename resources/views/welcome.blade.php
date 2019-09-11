@@ -201,7 +201,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Le choix du Prix de soumission</h4>
+                    <h3 class="modal-title" id="myModalLabel">Bienvenu(e) sur le site du Prix d'innovation du <strong>MPEER</strong> 
+                        Veuillez sélectionner votre catégorie</h3>
                 </div>
                 <div class="modal-body text-center">
                     <h4>

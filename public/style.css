@@ -3661,3 +3661,30 @@ footer.demo .copyright {
 .banner-area.demo-banner {
   padding: 50px 0;
 }
+
+/* style :fullscreen */
+.modal-title {
+  line-height: 2.428571;
+  text-align: center;
+  color: #ffffff
+}
+
+.modal-header {
+  background-color: #85b921;
+}
+
+.modal-header .close {
+  font-size: 60px !important;
+}
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
