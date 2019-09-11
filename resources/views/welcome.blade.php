@@ -11,11 +11,11 @@
                         <div class="content">
                             <!--made by vipul mirajkar thevipulm.appspot.com-->
                             <h1>
-                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION #PIMPEER", "prixinnovation.energie.gouv.ci" ]'>
+                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTÈRE", "DE PÉTROLE DE L’ENERGIE ET", "DES ÉNERGIES RENOUVELABLES" ]'>
                                     <span class="wrap"></span>
                                 </a>
                             </h1>
-                            <p class="text-justify text-black text-600">
+                            <p class="text-black text-600">
                                 Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations. <br>
                                 Le PIMPEER a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
@@ -34,9 +34,9 @@
                             S'inscrire
                             </button>
                             <p>
-                                <ul class="list-inline">
-                                <li class="text-white">Déjà inscrit ?</li>
-                                <li><a href="{{ route('login') }}" class="text-orange">Connectez-vous ici</a></li>
+                                <ul class="list-inline text-600">
+                                    <li>Déjà inscrit ?</li>
+                                    <li><a href="{{ route('login') }}" class="text-orange">Connectez-vous ici</a></li>
                                 </ul>
                             </p>
                             <!-- <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube light video-play-button video-inline">
