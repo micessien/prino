@@ -107,7 +107,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <button type="submit" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
-                                    {{ __('S \'Inscrire') }}
+                                    {{ __('Suivant') }}
                                     </button>
                                 </div>
                             </div>
