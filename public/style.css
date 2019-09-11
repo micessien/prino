@@ -234,6 +234,15 @@ b, strong {
   font-size: 20px !important;
 }
 
+.btn-link{
+  margin-top: 4% !important;
+}
+
+.btn-link:focus,
+.btn-link:hover{
+  color: #E67924 !important;
+}
+
 .btn.active, .btn:active {
   background-image: inherit !important;
 }
