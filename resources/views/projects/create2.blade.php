@@ -8,29 +8,34 @@
 
         <div class="row justify-content-center">
 
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form action="projects/createstep2" method="POST" enctype="multipart/form-data">
             {{ csrf_field()}}
             <form>
+                        <div class="form-group col-md-6">
+                                        <label for="entite">Entité</label>
+                                            <input type="text" name="entite" value="{{ $user->projects->entite }}"  class="form-control" id="entite" placeholder="entite">
+                                      </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                                 <label for="entite">* M / Mme  Prénoms Nom</label>
-                                <input type="text" class="form-control" id="entite" placeholder="Koffi Jean">
+                                <input name="nomcomplet" value="{{ $user->projects->nomcomplet }}" type="text" class="form-control" id="entite" placeholder="Koffi Jean">
                         </div>
                         <div class="form-group col-md-12">
                                 <label for="entite">* Email</label>
-                                <input type="text" class="form-control" id="entite" placeholder="ean@mail.com">
+                                <input name="email" value="{{ $user->projects->email }}"  type="text" class="form-control" id="entite" placeholder="ean@mail.com">
                         </div>
                         <div class="form-group col-md-12">
                                 <label for="telephone">* Telephone</label>
-                                <input type="text" class="form-control" id="telephone" placeholder="+225">
+                                <input name="telephone" value="{{ $user->projects->telephone }}" type="text" class="form-control" id="telephone" placeholder="+225">
                         </div>
                       <div class="form-group col-md-12">
                         <label for="entite">*Fonction occupée dans l’entreprise</label>
-                        <input type="text" class="form-control" id="entite" placeholder="entite">
+                        <input name="fonctionoccupe" value="{{ $user->projects->fonctionoccupe }}"  type="text" class="form-control" id="entite" placeholder="entite">
                       </div>
                       <div class="form-group col-md-12">
                             <label for="categorie">*Descriptif du projet / de l’activité</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            <textarea name="descriptifprojet" value="{{ $user->projects->descriptifprojet }}"
+                                 class="form-control" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Descriptif du projet (2500 signes maximum espaces compris)">
                                 </textarea>                         
                         </div>
@@ -43,7 +48,7 @@
                         </div>
                       <div class="form-group col-md-12">
                             <label for="Adresse">*En quoi votre projet est – il innovant et bénéficie t-il au pays?</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" 
+                            <textarea name="innovantprojet" value="{{ $user->projects->innovantprojet }}"  class="form-control" id="exampleFormControlTextarea1" rows="3" 
                             placeholder="Descriptif de l’innovation (500 signes maximum espaces compris)">
                                 </textarea>                             
                         </div>

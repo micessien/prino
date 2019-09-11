@@ -6,7 +6,7 @@
         Informations sur l’entité
 </div>
 
-        <form action="/projects/create" method="POST" enctype="multipart/form-data">
+        <form action="/projects/create" method="POST">
             {{ csrf_field()}}
 
                 <div class="form-row">
