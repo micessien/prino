@@ -106,6 +106,27 @@
                             
                             <div class="row">
                                 <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label style="font-size: 16px; color: #fff; font-weight: 600;">
+                                                <input type="checkbox" name="reglement" required /> Je déclare avoir lu et compris les conditions figurant au règlement du concours disponible
+                                                    sous règlement et les accepter sans réserve. Je renonce à tout recours à l’encontre des
+                                                    organisateurs et partenaires du concours, de leurs représentants ou des membres du jury. Je
+                                                    certifie que tous les éléments fournis sont exacts et complets.
+                                            </label>
+                                        </div>
+
+                                        @if ($errors->has('password'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
                                     <button type="submit" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
                                     {{ __('Suivant') }}
                                     </button>
