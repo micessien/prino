@@ -91,7 +91,7 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{{ url('/') }}">
                         <img src="assets/img/logo-pimpeer-1.png" width="265" class="logo logo-display" alt="Logo">
                         <img src="assets/img/logo-pimpeer-1.png" width="265" class="logo logo-scrolled" alt="Logo">
                     </a>
