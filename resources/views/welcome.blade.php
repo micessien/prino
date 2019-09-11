@@ -56,46 +56,6 @@
     </div>
     <!-- End Banner -->
 
-     <!-- Start Companies Area 
-    ============================================= -->
-    <div class="bg-gray companies-area default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="site-heading text-center">
-                        <h2>STRUCTURES <span>PARTENAIRE</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 clients">
-                    <div class="clients-items owl-carousel owl-theme text-center">
-                        <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/ci-energie.JPG" height="90" width="200" alt="Clients"></a>
-                        </div>
-                        <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/dgh.PNG" height="90" width="200" alt="Clients"></a>
-                        </div>
-                        <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/anare-ci.PNG" height="90" width="200" alt="Clients"></a>
-                        </div>
-                        <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/gestoci.JPG" height="90" width="200" alt="Clients"></a>
-                        </div>
-                        <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/petroci.PNG" height="90" width="200" alt="Clients"></a>
-                        </div>
-                        <div class="single-item">
-                            <a href="#"><img src="assets/img/clients/sir.PNG" height="90" width="200" alt="Clients"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Companies Area -->
-
-
     <!-- Start Contact Area  
     ============================================= -->
     <div id="contact" class="contact-us-area default-padding">
