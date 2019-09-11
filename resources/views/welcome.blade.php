@@ -174,7 +174,7 @@
                             <li>
                                 <h4>Email</h4>
                                 <div class="icon"><i class="fas fa-envelope-open"></i> </div>
-                                <span>info@energie.gouv.ci</span>
+                                <span>prix.innovation@energie.gouv.ci</span>
                             </li>
                         </ul>
                         <h4>Reseaux Sociaux</h4>
