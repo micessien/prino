@@ -27,6 +27,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
     <link href="assets/css/roadmap.css" rel="stylesheet">
+    <link href="assets/css/scroll-button.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
@@ -352,6 +353,11 @@
         </div>
     </div>
     <!-- /.End modal inscription -->
+    
+    <!-- Scroll button -->
+    <a id="myScrollBtn-right" title="Télécharger le calendrié">Calendrier</a>
+    <a id="myScrollBtn-left" title="Télécharger le reglement interieur">Reglément intérieur</a>
+    <!-- /.Scroll button -->
 
 
     <!-- jQuery Frameworks

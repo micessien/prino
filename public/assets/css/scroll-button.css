@@ -1,0 +1,33 @@
+#myScrollBtn-right {
+    /* display: none; */
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: #6e981d;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 4px;
+  }
+
+  #myScrollBtn-left {
+    /* display: none; */
+    position: fixed;
+    bottom: 40px;
+    left: 30px;
+    z-index: 99;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: #6e981d;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 4px;
+  }
