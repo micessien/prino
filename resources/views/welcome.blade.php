@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="content-box video-popup">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-10 col-md-offset-1">
                         <div class="content">
                             <!--made by vipul mirajkar thevipulm.appspot.com-->
                             <h1>
