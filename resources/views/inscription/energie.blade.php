@@ -3,7 +3,7 @@
 @section('content')
 <!-- Start Banner 
 ============================================= -->
-<div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/11.jpg);">
+<div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/12.jpg);">
     <div class="container">
         <div class="row justify-content-center padding-top-160">
             <div class="col-md-12">
@@ -68,8 +68,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
-                                            <div class="col-md-11">
+                                            <div class="col-md-11 col-md-offset-1">
                                                 <div class="form-group">
                                                     <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" required autofocus>
 

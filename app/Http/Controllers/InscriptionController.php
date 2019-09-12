@@ -28,6 +28,19 @@ class InscriptionController extends Controller
         //
         return view('inscription/energie');
     }
+    
+    public function mail()
+    {
+        //
+        $to_name = 'Inscription etat';
+        $to_email = 'micaeldie@gmail.com';
+        $data = array("name"=>"Ogbonna Vitalis(sender_name)", "body" => "A test mail");
+
+        Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) {
+            $message->to($to_email, $to_name)->subject('Laravel Test Mail');
+            $message->from('gouv.ci','Test Mail');
+        });
+    }
 
     /**
      * Show the form for creating a new resource.

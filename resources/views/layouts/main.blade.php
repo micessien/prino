@@ -59,7 +59,7 @@
                     <ul>
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('S \'Inscrire') }}</a>
+                                <a class="nav-link" href="{{ route('hydrocarbures') }}">{{ __('S \'Inscrire') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>

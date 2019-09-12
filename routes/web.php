@@ -41,6 +41,7 @@ Route::post('profile', 'UserController@update_avatar');
 // Confirm registation
 Route::get('hydrocarbures', 'InscriptionController@index')->name('hydrocarbures');
 Route::get('energie', 'InscriptionController@energie')->name('energie');
+Route::get('envoyer', 'InscriptionController@mail')->name('mail');
 Route::get('confirmation', 'ConfirmController@index')->name('confirm');
 Route::get('felicitation', 'ConfirmController@congrats')->name('congrats');
 
