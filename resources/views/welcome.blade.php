@@ -25,9 +25,7 @@
                                 - innovation hydrocarbures <br>
                                 - innovation Energie <br><br>
                                 Vous êtes jeunes, vous êtes une startup, une association, venez faire valoir votre savoir,
-                                votre talent pour une exploitation durable et à moindre coût des ressources énergétiques
-                                et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
-                                Côte d’Ivoire.
+                                votre talent pour une exploitation durable et à moindre coût des ressources énergétiques au bénéfice de la Côte d’Ivoire.
                             </p>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn circle btn-primary btn-vert btn-inscrire btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
