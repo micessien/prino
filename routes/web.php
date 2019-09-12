@@ -38,7 +38,8 @@ Route::get('/user/verify/{token}', 'Auth\RegisterController@verifyUser');
 Route::get('profile', 'UserController@profile');
 Route::post('profile', 'UserController@update_avatar');
 
-
+// Confirm registation
+Route::get('confirmation', 'ConfirmController@index')->name('confirm');
 
 Route::get('/projects/index', 'ProjectController@index')->name('projects.index');
 Route::post('/projects/create', 'ProjectController@create')->name('projects.create');
