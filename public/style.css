@@ -3764,3 +3764,18 @@ form.register input:-ms-input-placeholder {
   font-size: 45px;
   line-height: 3;
 }
+
+.congrats-container .site-heading p {
+  background-color: #85b921;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin: 20% auto 6%;
+  font-size: 45px;
+  line-height: 3.5;
+}
+
+.congrats-container .site-heading h4 {
+  margin-bottom: 6%;
+}

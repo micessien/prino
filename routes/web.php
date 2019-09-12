@@ -40,6 +40,7 @@ Route::post('profile', 'UserController@update_avatar');
 
 // Confirm registation
 Route::get('confirmation', 'ConfirmController@index')->name('confirm');
+Route::get('felicitation', 'ConfirmController@congrats')->name('congrats');
 
 Route::get('/projects/index', 'ProjectController@index')->name('projects.index');
 Route::post('/projects/create', 'ProjectController@create')->name('projects.create');

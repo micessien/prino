@@ -13,6 +13,11 @@ class ConfirmController extends Controller
      */
     public function index()
     {
-        return view('confirm');
+        return view('message/confirm');
+    }
+    
+    public function congrats()
+    {
+        return view('message/congrats');
     }
 }
