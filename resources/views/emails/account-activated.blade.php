@@ -176,6 +176,13 @@
             font-weight: 500;
             font-size: 16px;
         }
+        
+        .btn-vert {
+            background-color: #85b921 !important;
+            border: #6e981d !important;
+            color: white;
+            padding: 11px 25px;
+        }
 
         /* -------------------------------------
             RESPONSIVE AND MOBILE FRIENDLY STYLES
@@ -228,7 +235,7 @@
                     <tr>
                         <td class="content-block aligncenter">
                             <br/>
-                            <img src="{{ asset('logo path') }}" width="175px" height="77px" alt="Prix de l'innovation Logo"/>
+                            <img src="{{ asset('assets/img/logo-prix-innovation.png') }}" width="175px" alt="Prix de l'innovation Logo"/>
                         </td>
                     </tr>
                     <tr>
@@ -238,15 +245,14 @@
                                     <td class="content-block">
                                         <p>Bonjour {{ $user->prenom.' '.$user->name }},</p>
                                         <p>
-                                            <br>Une dernière étape, veuillez confirmer votre adresse e-mail afin d'accéder à votre compte.
-                                            Cliquez sur le bouton ci-dessous pour la confirmation de votre compte :
+                                            <br>Nous vous remercions d’avoir ouvert un compte #PIMPEER, <br>Pour finir votre inscription, veuillez cliquer sur le bouton ci-dessous:
                                         </p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="content-block" itemprop="handler" itemscope
                                         itemtype="http://schema.org/HttpActionHandler">
-                                        <a href="{{ url('users/confirmation-de-compte?token=').$verified->token }}" class="btn-primary" itemprop="url">Confirmer
+                                        <a href="{{ url('users/confirmation-de-compte?token=').$verified->token }}" class="btn-primary btn-vert" itemprop="url">Confirmer
                                             votre compte</a>
                                     </td>
                                 </tr>
@@ -254,6 +260,19 @@
                                     <td class="content-block">
                                         Si vous ne parvenez pas à cliquer sur le lien, copiez cette URL et collez-la dans un navigateur. <br>
                                         {{ url('users/confirmation-de-compte?token=').$verified->token }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-block">
+                                        <p>
+                                            Une fois que vous avez confirmé votre adresse email, vous pourrez commencer à déposer votre dossier sur votre compte en utilisant le mot de passe créé lors de votre inscription, ainsi que votre identifiant PIMPEER (Email).
+                                        </p>
+                                        <p>
+                                            CONFIRMER L&#39;ADRESSE EMAIL * Afin de protéger votre compte, le lien de validation est seulement valide pendant 24 heures.
+                                        </p>
+                                        <p>
+                                            Cordialement, Le Jury PIMPEER
+                                        </p>
                                     </td>
                                 </tr>
                             </table>
@@ -273,4 +292,3 @@
 </table>
 </body>
 </html>
-
