@@ -13,18 +13,11 @@
                 {{ csrf_field()}}
             <form>
 
-                      <div class="form-group col-md-12">
-                            <label for="categorie">*Qui sont vos concurrents ?</label>
-                            <textarea 
-                            name="concurrent" value="{{ $user->projects->concurrent }}"
-                            class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Descriptif de la concurrence (500 signes maximum espaces compris)">
-                                </textarea>                         
-                        </div>
+
 
                       <div class="form-group col-md-12">
-                            <label for="equipe">*Avez-vous (eu) de la main d’œuvre qualifiée pour le développement  de votre projet ? 
-                                Combien de personnes avez-vous / comptez vous embaucher pour le développement de votre projet ?</label>
+                            <label for="equipe">
+                                Combien de personnes  comptez vous embaucher pour le développement de votre projet ?</label>
                             <textarea 
                             name="equipe" value="{{ $user->projects->equipe }}"
                             class="form-control" id="exampleFormControlTextarea1" rows="3" 

@@ -6,12 +6,12 @@
         Informations sur l’entité
 </div>
 
-        <form action="/projects/create" method="POST">
+        <form action="/projects/create" method="POST" enctype="multipart/form-data">
             {{ csrf_field()}}
 
                 <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="entite">Entité</label>
+                            <label for="entite">Personne morale ou physique</label>
                                 <input type="text" name="entite" value="{{ $user->projects->entite }}"  class="form-control" id="entite" placeholder="entite">
                           </div>
                           <div class="form-group col-md-6">
@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="form-group">
-                                <label for="boitepostal">*Descriptif de l’entreprise   </label>
+                                <label for="boitepostal">*Descriptif de l’entreprise (le cas echeant)   </label>
                                 <textarea  name="descriptifentreprise" value="{{ $user->projects->descriptifentreprise }}"  class="form-control" id="exampleFormControlTextarea1" rows="3">
                                     </textarea>                    
                         </div>
