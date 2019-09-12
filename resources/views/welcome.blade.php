@@ -11,7 +11,7 @@
                         <div class="content">
                             <!--made by vipul mirajkar thevipulm.appspot.com-->
                             <h1>
-                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTÈRE", "DE PÉTROLE DE L’ENERGIE ET", "DES ÉNERGIES RENOUVELABLES" ]'>
+                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTÈRE", "DU PÉTROLE, DE L’ENERGIE ET", "DES ÉNERGIES RENOUVELABLES" ]'>
                                     <span class="wrap"></span>
                                 </a>
                             </h1>
@@ -22,8 +22,8 @@
                                 prodiges, en soutenant leurs projets et innovations technologiques inhérents aux secteurs
                                 Hydrocarbures et Energies. <br><br>
                                 Ce prix de l’innovation est attribué dans chacune des catégories suivantes : <br>
-                                # innovation hydrocarbures <br>
-                                # innovation Energie <br><br>
+                                - innovation hydrocarbures <br>
+                                - innovation Energie <br><br>
                                 Vous êtes jeunes, vous êtes une startup, une association, venez faire valoir votre savoir,
                                 votre talent pour une exploitation durable et à moindre coût des ressources énergétiques
                                 et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
@@ -120,7 +120,7 @@
                             <li>
                                 <h4>Notre Localisation</h4>
                                 <div class="icon"><i class="fas fa-map-marked-alt"></i></div> 
-                                <span>Ministère du Pétrole, de l’Energie et du Développement des Energies Renouvelables
+                                <span>Ministère du Pétrole, de l’Energie et des Energies Renouvelables
 
                                     Immeuble. <br> SCIAM,  15ème Etage Plateau <br>
                                     BP 06 Abidjan - Côte d’Ivoire <br>
