@@ -187,8 +187,8 @@
     <!-- /.End modal inscription -->
     
     <!-- Scroll button -->
-    <a id="myScrollBtn-right" title="Télécharger le calendrié">Calendrier</a>
-    <a id="myScrollBtn-left" title="Télécharger le reglement interieur">Reglément intérieur</a>
+    <a id="myScrollBtn-right" title="Télécharger le calendrié (Document non disponible, veuillez réessayer plus tard)">Calendrier</a>
+    <a id="myScrollBtn-left" href="{{ url('/pdf/PI-MPEER_Reglement des Prix_R9_11Sep2019.pdf') }}" title="Télécharger le reglement interieur">Reglément intérieur</a>
     <!-- /.Scroll button -->
 
 @endsection
