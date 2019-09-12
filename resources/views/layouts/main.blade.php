@@ -59,7 +59,7 @@
                     <ul>
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('hydrocarbures') }}">{{ __('S \'Inscrire') }}</a>
+                                <button class="nav-link" data-toggle="modal" data-target="#myModal">{{ __('S \'Inscrire') }}</button>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
@@ -132,6 +132,35 @@
     <!-- End Header -->
 
     @yield('content')
+    
+    <!-- Start modal inscription -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-image: url(assets/img/banner/bg-palm-1.jpg); background-repeat: no-repeat; background-size: auto; background-position: center;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel"></h3>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>
+                        Bienvenu(e) sur le site du Prix d'innovation du <strong>MPEER</strong> <br>
+                        Veuillez sélectionner votre catégorie
+                    </h4>
+                    <ul class="list-inline">
+                        <li>
+                            <!-- <div class="icon"><i class="flaticon-down-arrow"></i></div> -->
+                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('hydrocarbures') }}">Prix Innovation Hydrocarbures</a>
+                        </li>
+                        <li>
+                            <!-- <div class="icon"><i class="flaticon-customer-service"></i></div> -->
+                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('energie') }}">Prix Innovation Energie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.End modal inscription -->
 
     <!-- jQuery Frameworks
     ============================================= -->
