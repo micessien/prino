@@ -8,7 +8,8 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <p><i class="fa fa-thumbs-up"></i></p>
+                        <p>
+                            <a href="{{ url('felicitation') }}" style="color: #ffffff" title="Cliquez ici"><i class="fa fa-thumbs-up"></i></a></p>
                         <h4>Un mail vous a été envoyé à votre adresse, veuillez vous connecter pour valider votre compte afin de remplir le dossier de candidature!</h4>
                     </div>
                 </div>

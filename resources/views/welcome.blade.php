@@ -173,11 +173,11 @@
                     <ul class="list-inline">
                         <li>
                             <!-- <div class="icon"><i class="flaticon-down-arrow"></i></div> -->
-                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('register') }}">Prix Innovation Hydrocarbures</a>
+                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('hydrocarbures') }}">Prix Innovation Hydrocarbures</a>
                         </li>
                         <li>
                             <!-- <div class="icon"><i class="flaticon-customer-service"></i></div> -->
-                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('register') }}">Prix Innovation Energie</a>
+                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('energie') }}">Prix Innovation Energie</a>
                         </li>
                     </ul>
                 </div>

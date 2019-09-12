@@ -169,9 +169,12 @@
                             
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
+                                    <a href="{{ url('confirmation') }}" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
                                     {{ __('Je termine') }}
-                                    </button>
+                                    </a>
+                                    <!-- <button type="submit" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
+                                    {{ __('Je termine') }}
+                                    </button> -->
                                 </div>
                             </div>
                             <!-- Alert Message -->

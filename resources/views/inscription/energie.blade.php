@@ -8,7 +8,7 @@
         <div class="row justify-content-center padding-top-160">
             <div class="col-md-12">
                 <div class="card card-register">
-                    <div class="card-header text-shadow-10 text-white"><h1>{{ __('Prix Hydrocarbures') }}</h1></div>
+                    <div class="card-header text-shadow-10 text-white"><h1>{{ __('Prix Energie') }}</h1></div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}" class="register">
@@ -169,9 +169,12 @@
                             
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
+                                    <a href="{{ url('confirmation') }}" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
+                                        {{ __('Je termine') }}
+                                    </a>
+                                    <!-- <button type="submit" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
                                     {{ __('Je termine') }}
-                                    </button>
+                                    </button> -->
                                 </div>
                             </div>
                             <!-- Alert Message -->
