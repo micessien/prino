@@ -50,8 +50,12 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => 'required|string|max:255',
+            'prenom' => 'required|string|max:255',
+            'entreprise' => 'required',
+            'genre' => 'required',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed|'        ]);
+            'password' => 'required|string|min:6|confirmed|'
+            ]);
     }
     /**
      * Create a new user instance after a valid registration.
@@ -77,6 +81,7 @@ class RegisterController extends Controller
         Mail::to($user->email)->send(new VerifyMail($user));
         return $user;
     }
+    
     public function verifyUser($token)
     {
         $verifyUser = VerifyUser::where('token', $token)->first();

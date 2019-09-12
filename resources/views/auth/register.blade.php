@@ -16,8 +16,11 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input id="genre" type="text" placeholder="M" class="form-control{{ $errors->has('genre') ? ' is-invalid' : '' }}" name="genre" value="{{ old('genre') }}" required autofocus>
-
+                                        <select class="form-control{{ $errors->has('genre') ? ' is-invalid' : '' }}" name="genre" id="genre" required>
+                                            <option value="M">M</option>
+                                            <option value="Mme">Mme</option>
+                                            <option value="Mlle">Mlle</option>
+                                        </select>
                                         @if ($errors->has('genre'))
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $errors->first('genre') }}</strong>
