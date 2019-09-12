@@ -16,7 +16,7 @@
                                 </a>
                             </h1>
                             <p class="text-black text-600">
-                                Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
+                                Le Prix de l’innovation (#InnovMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations. <br>
                                 Le PIMPEER a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
                                 prodiges, en soutenant leurs projets et innovations technologiques inhérents aux secteurs
@@ -25,9 +25,7 @@
                                 - innovation hydrocarbures <br>
                                 - innovation Energie <br><br>
                                 Vous êtes jeunes, vous êtes une startup, une association, venez faire valoir votre savoir,
-                                votre talent pour une exploitation durable et à moindre coût des ressources énergétiques
-                                et pour un impact significatif et bénéfique des énergies dans la vie socio-économique de la
-                                Côte d’Ivoire.
+                                votre talent pour une exploitation durable et à moindre coût des ressources énergétiques au bénéfice de la Côte d’Ivoire.
                             </p>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn circle btn-primary btn-vert btn-inscrire btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
@@ -158,39 +156,10 @@
         </div>
     </div>
     <!-- End Contact -->
-
-    <!-- Start modal inscription -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content" style="background-image: url(assets/img/banner/bg-palm-1.jpg); background-repeat: no-repeat; background-size: auto; background-position: center;">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h3 class="modal-title" id="myModalLabel"></h3>
-                </div>
-                <div class="modal-body text-center">
-                    <h4>
-                        Bienvenu(e) sur le site du Prix d'innovation du <strong>MPEER</strong> <br>
-                        Veuillez sélectionner votre catégorie
-                    </h4>
-                    <ul class="list-inline">
-                        <li>
-                            <!-- <div class="icon"><i class="flaticon-down-arrow"></i></div> -->
-                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('register') }}">Prix Innovation Hydrocarbures</a>
-                        </li>
-                        <li>
-                            <!-- <div class="icon"><i class="flaticon-customer-service"></i></div> -->
-                            <a class="btn circle btn-primary btn-vert btn-lg padding-left-right" href="{{ route('register') }}">Prix Innovation Energie</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.End modal inscription -->
     
     <!-- Scroll button -->
-    <a id="myScrollBtn-right" title="Télécharger le calendrié">Calendrier</a>
-    <a id="myScrollBtn-left" title="Télécharger le reglement interieur">Reglément intérieur</a>
+    <a id="myScrollBtn-right" href="{{ url('/pdf/Calendrier_PDE19.pdf') }}" title="Télécharger le calendrié">Calendrier</a>
+    <a id="myScrollBtn-left" href="{{ url('/pdf/PI-MPEER_Reglement des Prix_R9_11Sep2019.pdf') }}" title="Télécharger le reglement interieur">Reglément intérieur</a>
     <!-- /.Scroll button -->
 
 @endsection

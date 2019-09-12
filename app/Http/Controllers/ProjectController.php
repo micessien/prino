@@ -122,37 +122,54 @@ class ProjectController extends Controller
 
     public function create4(Request $request)
     {
-        //
+        
 
 
 		$user = Auth::user();
 
-		$user = User::find($user->id);
+        $user = User::find($user->id);
+        
+
+        dd($request->file('declarationfiscale'));
+        // $declarationfiscale = $request->file('declarationfiscale');
 
 
-        $user->projects->reglementation = $request->input('reglementation');
-        $user->projects->stadedevelopement = $request->input('stadedevelopement');
-        $user->projects->besoinfinancement = $request->input('besoinfinancement');
-        $user->projects->repartitioncapitale = $request->input('repartitioncapitale');
+        // $destination_path = public_path().'/files';
+        // $extention = $declarationfiscale->getClientOriginalExtension();
+
+
+        // $declarationfiscale = $declarationfiscale->getClientOriginalName();
+        // $declarationfiscales = $declarationfiscales.'_'.time().'.'.$extention;
+        // $declarationfiscales->move($destination_path ,$declarationfiscales);
+
+
+		$user->save();
+        $user->projects->save();
+
+
+        // $user->projects->declarationfiscale = $request->input('declarationfiscale');
+        // $user->projects->businessplan = $request->input('businessplan');
+        // $user->projects->planfin = $request->input('planfin');
+        // $user->projects->powerpoint = $request->input('powerpoint');
         
  
 		$user->save();
-		$user->projects->save();
+        $user->projects->save();
+        
+
 
     	return view('projects.index5', array('user' => Auth::user()) );
 
     }
 
     public function create5()
-    {
-        //
-        return view('projects.create-step-5', array('user' => Auth::user()) );
+     {
 
 
-        $user = Auth::user();
 
-        $user = User::find($user->id);
-    }
+         return view('home', array('user' => Auth::user()) );
+
+     }
 
     /**
      * Store a newly created resource in storage.

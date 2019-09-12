@@ -3719,7 +3719,12 @@ footer.demo .copyright {
   border-radius: 0;
 }
 
-/* Style register */
+/** Style register **/
+.card-register{
+  background-color: #d8d8d8;
+  padding: 50px 40px;
+  border-radius: 50px;
+}
 form.register .form-control{
   background-color: rgba(0, 0, 0, 0.12);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
@@ -3751,4 +3756,31 @@ form.register input::-moz-placeholder {
 
 form.register input:-ms-input-placeholder {
   color: white !important;
+}
+
+/** Confirmation style **/
+.confirm-container .site-heading p {
+  background-color: #e6792c;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 20% auto 2%;
+  font-size: 45px;
+  line-height: 3;
+}
+
+.congrats-container .site-heading p {
+  background-color: #85b921;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin: 20% auto 6%;
+  font-size: 45px;
+  line-height: 3.5;
+}
+
+.congrats-container .site-heading h4 {
+  margin-bottom: 6%;
 }

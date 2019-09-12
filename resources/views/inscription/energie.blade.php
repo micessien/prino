@@ -3,16 +3,17 @@
 @section('content')
 <!-- Start Banner 
 ============================================= -->
-<div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/11.jpg);">
+<div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/12.jpg);">
     <div class="container">
         <div class="row justify-content-center padding-top-160">
             <div class="col-md-12">
                 <div class="card card-register">
-                    <div class="card-header text-shadow-10 text-white"><h1>{{ __('Prix Hydrocarbures') }}</h1></div>
+                    <div class="card-header text-shadow-10 text-white"><h1>{{ __('Prix Energie') }}</h1></div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}" class="register">
+                        <form method="POST" action="{{ route('users.store') }}" aria-label="{{ __('Register') }}" class="register">
                             @csrf
+                            <input type="hidden" name="type" value="Energies">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
@@ -68,10 +69,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
-                                            <div class="col-md-11">
+                                            <div class="col-md-11 col-md-offset-1">
                                                 <div class="form-group">
-                                                    <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" required autofocus>
+                                                    <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" autofocus>
 
                                                     @if ($errors->has('entreprise'))
                                                         <span class="invalid-feedback" role="alert">
@@ -139,13 +139,17 @@
                                         <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
                                         <div class="col-md-11">
                                             <div class="form-group">
-                                                <input id="password-confirm" placeholder="Confirmer mot de passe" type="password" class="form-control" name="password_confirmation" required>
+                                                <input id="password-confirm" placeholder="Confirmer mot de passe" type="password" class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" name="password_confirmation" required>
+                                                @if ($errors->has('password_confirmation'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                                    </span>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -157,21 +161,12 @@
                                                     certifie que tous les éléments fournis sont exacts et complets.
                                             </label>
                                         </div>
-
-                                        @if ($errors->has('password'))
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $errors->first('password') }}</strong>
-                                            </span>
-                                        @endif
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" name="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">
-                                    {{ __('Je termine') }}
-                                    </button>
+                                    <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button>
                                 </div>
                             </div>
                             <!-- Alert Message -->

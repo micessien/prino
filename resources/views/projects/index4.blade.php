@@ -14,7 +14,7 @@
             <form>
 
                       <div class="form-group col-md-12">
-                            <label for="categorie">*Votre projet est-il conforme à la règlementation de la Côte D’Ivoire ? Quel texte faut-il prendre pour le rendre conforme ?</label>
+                            <label for="categorie">*Votre projet est-il conforme à la règlementation de la Côte D’Ivoire ?Si Non Quel texte faut-il prendre pour le rendre conforme ?</label>
                             <textarea 
                             name="reglementation" value="{{ $user->projects->reglementation }}"
 
