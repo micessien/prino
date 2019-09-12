@@ -16,38 +16,43 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->usingned()->nullable();
-            $table->string('entite');
-            $table->string('categorie');
-            $table->string('adresse');
-            $table->string('boite_postale');
-            $table->string('ville');
-            $table->string('chiffredaffaire');
-            $table->string('nombremploye');
-            $table->string('descriptifentreprise');
-            $table->string('prixremporte');
-            $table->string('siteweb');
-            $table->string('facebook');
-            $table->string('twitter');
+            $table->string('entite')->nullable();
+            $table->string('categorie')->nullable();
+            $table->string('adresse')->nullable();
+            $table->string('boite_postale')->nullable();
+            $table->string('ville')->nullable();
+            $table->string('chiffredaffaire')->nullable();
+            $table->string('nombremploye')->nullable();
+            $table->string('descriptifentreprise')->nullable();
+            $table->string('prixremporte')->nullable();
+            $table->string('siteweb')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
 
 
-            $table->string('nomcomplet');
-            $table->string('telephone');
-            $table->string('fonctionoccupe');
-            $table->string('descriptifprojet');
-            $table->string('innovantprojet');
-            $table->string('concurrent');
-            $table->string('equipe');
+            $table->string('nomcomplet')->nullable();
+            $table->string('telephone')->nullable();
+            $table->string('fonctionoccupe')->nullable();
+            $table->string('descriptifprojet')->nullable();
+            $table->string('innovantprojet')->nullable();
+            $table->string('concurrent')->nullable();
+            $table->string('equipe')->nullable();
 
 
-            $table->string('reglementation');
-            $table->string('stadedevelopement');
-            $table->string('besoinfinancement');
-            $table->string('repartitioncapitale');
-            $table->string('reglement');
-            $table->string('declarationfiscale');
-            $table->string('businessplan');
-            $table->string('planfinancier');
-            $table->string('presentationpowerpoint');
+            $table->string('reglementation')->nullable();
+            $table->string('stadedevelopement')->nullable();
+            $table->string('besoinfinancement')->nullable();
+            $table->string('repartitioncapitale')->nullable();
+
+
+            $table->string('declarationfiscale')->nullable();
+            $table->string('businessplan')->nullable();
+            $table->string('planfin')->nullable();
+            $table->string('powerpoint')->nullable();
+
+            
+            $table->string('filenames')->nullable();
+
 
             $table->timestamps();
         });
