@@ -71,7 +71,7 @@
                                     <div class="row">
                                             <div class="col-md-11 col-md-offset-1">
                                                 <div class="form-group">
-                                                    <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" required autofocus>
+                                                    <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" autofocus>
 
                                                     @if ($errors->has('entreprise'))
                                                         <span class="invalid-feedback" role="alert">

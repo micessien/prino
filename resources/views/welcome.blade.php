@@ -16,7 +16,7 @@
                                 </a>
                             </h1>
                             <p class="text-black text-600">
-                                Le Prix de l’innovation (#PIMPEER) vise à encourager, soutenir et valoriser l’innovation
+                                Le Prix de l’innovation (#InnovMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations. <br>
                                 Le PIMPEER a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
                                 prodiges, en soutenant leurs projets et innovations technologiques inhérents aux secteurs

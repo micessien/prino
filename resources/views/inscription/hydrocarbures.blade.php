@@ -69,25 +69,25 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
-                                            <div class="col-md-11">
-                                                <div class="form-group">
-                                                    <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" required autofocus>
+                                        <div class="col-md-11 col-md-offset-1">
+                                            <div class="form-group">
+                                                <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" autofocus>
 
-                                                    @if ($errors->has('entreprise'))
-                                                        <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $errors->first('entreprise') }}</strong>
-                                                        </span>
-                                                    @endif
-                                                </div>
+                                                @if ($errors->has('entreprise'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('entreprise') }}</strong>
+                                                    </span>
+                                                @endif
                                             </div>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-11 col-md-offset-1">
+                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
+                                        <div class="col-md-11">
                                             <div class="form-group">
                                                 <input id="telephone" type="text" placeholder="Téléphone" class="form-control{{ $errors->has('telephone') ? ' is-invalid' : '' }}" name="telephone" value="{{ old('telephone') }}" required autofocus>
 
