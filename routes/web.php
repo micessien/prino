@@ -61,10 +61,17 @@ Route::get('/projects/index5', 'ProjectController@index5')->name('projects.index
 Route::post('/projects/create5', 'ProjectController@create5')->name('projects.create5');
 
 Route::get('/projects/create-step-2', 'ProjectController@createstep2')->name('projects.create-step-2');
+
 Route::get('/projects/create-step-3', 'ProjectController@createstep3')->name('projects.create-step-3');
 
 Route::get('/projects/create-step-4', 'ProjectController@createstep4')->name('projects.create-step-4');
+
 Route::get('/projects/create-step-5', 'ProjectController@createstep5')->name('projects.create-step-5');
+
+Route::group(['prefix' => 'users'], function() {
+    Route::get('confirmation-de-compte', 'UserController@accountActivated')->name('users.account-activated');
+    Route::post('store', 'UserController@store')->name('users.store');
+});
 
 // Route::patch('users/{user}/update',  ['as' => 'users.update', 'uses' => 'UserController@update']);
 // Route::patch('users/{user}/update',  ['as' => 'users.update', 'uses' => 'UserController@update']);

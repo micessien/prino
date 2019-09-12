@@ -119,7 +119,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="javascript:void(0)">#PIMPEER</a>
+                            <a class="smooth-menu" style="font-size: 25px;" href="javascript:void(0)">#InnovMPEER</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
