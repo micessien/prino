@@ -94,8 +94,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img src="assets/img/logo-pimpeer-1.png" width="265" class="logo logo-display" alt="Logo">
-                        <img src="assets/img/logo-pimpeer-1.png" width="265" class="logo logo-scrolled" alt="Logo">
+                        <img src="assets/img/logo-prix-innovation.png" width="80" class="logo logo-display" alt="Logo">
+                        <img src="assets/img/logo-prix-innovation.png" width="80" class="logo logo-scrolled" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
