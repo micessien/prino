@@ -175,6 +175,10 @@ b, strong {
   font-weight: 900;
 }
 
+.text-shadow-10{
+  text-shadow: rgb(0, 0, 0) 3px 3px 10px !important;
+}
+
 .margin-top-35 {
   margin-top: 35px;
 }
@@ -184,6 +188,28 @@ b, strong {
   padding-right: 40px;
 }
 
+.padding-top-160{
+  padding-top: 160px !important
+}
+
+.card-register .card-header{
+  text-align: left;
+  font-weight: 800;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.text-600{
+  font-weight: 600 !important
+}
+
+.text-black {
+  color: #323a45 !important
+}
+
+.text-white{
+  color: #ffffff !important;
+}
 .text-orange{
   color: #E67924 !important;
 }
@@ -193,6 +219,28 @@ b, strong {
   border: #d86f24 !important;
   font-size: 13px !important;
   font-weight: 600;
+}
+
+.btn-vert{
+  background-color: #85b921 !important;
+  border: #6e981d !important;
+  font-size: 13px !important;
+  font-weight: 600;
+}
+
+.btn-inscrire {
+  width: 50%;
+  height: 60px;
+  font-size: 20px !important;
+}
+
+.btn-link{
+  margin-top: 4% !important;
+}
+
+.btn-link:focus,
+.btn-link:hover{
+  color: #E67924 !important;
 }
 
 .btn.active, .btn:active {
@@ -288,7 +336,7 @@ input {
 }
 
 .shadow.dark-hard::after {
-  background: #323a45 none repeat scroll 0 0;
+  background: rgba(50, 58, 69, 0) none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -3468,21 +3516,29 @@ footer.color-yellow .footer-bottom p a {
 /** Modal **/
 .modal .modal-body h4{
   margin-bottom: 55px !important;
+  margin-top: 55px;
+  font-size: 40px;
+}
+
+.modal ul.list-inline {
+  margin-top: 10% !important;
+}
+
+.modal ul.list-inline li {
+  padding-right: 35px !important;
+  padding-left: 35px !important;
 }
 
 .modal ul.list-inline li a{
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.modal ul.list-inline li a{
+  font-size: 20px !important;
+  padding: 20px 80px;
   font-weight: 500
 }
 
 .modal ul.list-inline li a:hover,
 .modal ul.list-inline li a:focus,
 .modal ul.list-inline li a:active{
-  color: #E67924
+  color: #ffffff
 }
 
 .modal ul.list-inline .icon{
@@ -3633,4 +3689,66 @@ footer.demo .copyright {
 }
 .banner-area.demo-banner {
   padding: 50px 0;
+}
+
+/* style :fullscreen */
+.modal-title {
+  line-height: 2.428571;
+  text-align: center;
+  color: #ffffff
+}
+
+.modal-header {
+  /* background-color: #85b921; */
+  border-bottom: none;
+}
+
+.modal-header .close {
+  font-size: 60px !important;
+}
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+/* Style register */
+form.register .form-control{
+  background-color: rgba(0, 0, 0, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+form.register .btn-inscrire{
+  width: 50%;
+  height: 50px;
+  font-size: 16px !important;
+  margin-top: 30px;
+}
+
+form.register input::-webkit-input-placeholder {
+  color: white !important;
+}
+
+form.register input:-moz-placeholder {
+  /* Firefox 18- */
+  color: white !important;
+}
+
+form.register input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white !important;
+}
+
+form.register input:-ms-input-placeholder {
+  color: white !important;
 }

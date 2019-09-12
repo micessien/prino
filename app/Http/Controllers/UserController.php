@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Auth;
 use Image;
+use App\User;
 class UserController extends Controller
 {
     //
@@ -11,14 +12,27 @@ class UserController extends Controller
     	return view('profile', array('user' => Auth::user()) );
     }
     public function update_avatar(Request $request){
-    	// Handle the user upload of avatar
+
+
+		$this->validate($request, [
+			// "name" => "required",
+			// "email" => "required|email"
+		]);
+
 		$user = Auth::user();
-		// $user->name = $request['name'];
 
-		dump($request->all());
+		$user = User::find($user->id);
 
-		// $user->save();
+		$user->name = $request->input('name');		
+		$user->prenom = $request->input('prenom');	
+		$user->genre = $request->input('genre');	
+		$user->email = $request->input('email');	
+		$user->entreprise = $request->input('entreprise');	
+		$user->telephone = $request->input('telephone');	
+			
+		$user->save();
+
     	
-    	return view('profile', array('user' => Auth::user()) );
+    	return view('home', array('user' => Auth::user()) );
     }
 }

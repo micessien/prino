@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>USER - Dashboard</title>
+  <title>Utilisateur - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -56,12 +56,10 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="projects/create">
+        <a class="nav-link collapsed" href="/projects/index">
           <span>Postuler</span>
         </a>
-		<a class="nav-link collapsed" href="#">
-          <span>Recevoir son invitation</span>
-        </a>
+
 		<a class="nav-link collapsed" href="/profile">
           <span>Mon Profile</span>
         </a>

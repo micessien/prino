@@ -9,37 +9,51 @@
             
     <div class="row justify-content-center">
 
-        <form action="" method="POST" enctype="multipart/form-data">
-            {{ csrf_field()}}
+            <form action="/projects/create4" method="POST" enctype="multipart/form-data">
+                {{ csrf_field()}}
             <form>
 
                       <div class="form-group col-md-12">
                             <label for="categorie">*Votre projet est-il conforme à la règlementation de la Côte D’Ivoire ? Quel texte faut-il prendre pour le rendre conforme ?</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            <textarea 
+                            name="reglementation" value="{{ $user->projects->reglementation }}"
+
+                            class="form-control" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Descriptif du cadre règlementaire (500 signes maximum espaces compris)">
                                 </textarea>                         
                         </div>
 
                       <div class="form-group col-md-12">
                             <label for="Adresse">*A quel stade de développement est le projet ?</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" 
+                            <textarea
+                            name="stadedevelopement" value="{{ $user->projects->stadedevelopement }}"
+
+                             class="form-control" id="exampleFormControlTextarea1" rows="3" 
                             placeholder="Descriptif de l’évolution du projet (500 signes maximum espaces compris)">
                                 </textarea>                             
                         </div>
 
                         <div class="form-group col-md-12">
                                 <label for="Adresse">*Quels sont vos besoins de financement ?</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" 
+                                <textarea 
+                                name="besoinfinancement" value="{{ $user->projects->besoinfinancement }}"
+                                
+                                class="form-control" id="exampleFormControlTextarea1" rows="3" 
                                 placeholder="Descriptif du financement du projet (1000 signes maximum espaces compris)">
                                     </textarea>                             
                         </div>
 
                         <div class="form-group col-md-12">
                                     <label for="Adresse">*Quelle est la répartition du capital Social ?</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" 
+                                    <textarea 
+                                    name="repartitioncapitale" value="{{ $user->projects->repartitioncapitale }}"
+
+                                    class="form-control" id="exampleFormControlTextarea1" rows="3" 
                                     placeholder="Descriptif de la structure du Capital de l’entité  (200 signes maximum espaces compris)">
                                         </textarea>                             
                         </div>
+
+                        
 
                         <div class="form-group">
                                 <div class="form-check">

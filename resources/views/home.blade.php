@@ -75,7 +75,7 @@
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
                           <div class="col mr-2">
-                            <a href="projects/create">
+                            <a href="projects/index">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Postuler</div>
                           </a>
                           </div>
@@ -86,31 +86,15 @@
                       </div>
                     </div>
                   </div>
-      
-                  <!-- Earnings (Monthly) Card Example -->
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-success shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Invitation</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                              <img src="uploads/avatars/paper-plane.png" width="100" height="100" alt="">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <!-- Earnings (Monthly) Card Example -->
+
                   <div class="col-xl-3 col-md-6 mb-4">
                     <div class="card border-left-info shadow h-100 py-2">
                       <div class="card-body">
                         <div class="row no-gutters align-items-center">
                           <div class="col mr-2">
-                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Mon Profile</div>
-
+                              <a href="projects/create">
+                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Mon Profile</div>
+                              </a>
                           </div>
                           <div class="col-md-12 text-center">
                               <img src="uploads/avatars/user.png" width="100" height="100" alt="">

@@ -890,7 +890,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav .navbar-brand {
-    padding: 20px 15px;
+    padding: 10px 15px;
   }
 
   nav.navbar.bootsnav.sticked .navbar-brand {
@@ -2152,7 +2152,8 @@ nav.navbar.bootsnav {
 
 .navbar.navbar-transparent .attr-nav > ul > li:first-child a {
   background: transparent none repeat scroll 0 0 !important;
-  border: 1px solid #ffffff !important;
+  color: #85b921 !important;
+  border: 1px solid #85b921 !important;
 }
 
 .navbar .attr-nav.button.dark a {
@@ -2298,10 +2299,13 @@ ul.cart-list > li.total > .btn {
   }
 
   nav.navbar.bootsnav.no-background.white .attr-nav > ul > li > a, 
-  nav.navbar.bootsnav.navbar-transparent.white .attr-nav > ul > li > a, 
-  nav.navbar.bootsnav.navbar-transparent.white ul.nav > li > a, 
+  nav.navbar.bootsnav.navbar-transparent.white .attr-nav > ul > li > a,
   nav.navbar.bootsnav.no-background.white ul.nav > li > a {
     color: #fff;
+  }
+
+  nav.navbar.bootsnav.navbar-transparent.white ul.nav > li > a {
+    color: #85b921;
   }
 
   nav.navbar.bootsnav.navbar-transparent.dark .attr-nav > ul > li > a, 

@@ -16,7 +16,16 @@ class User extends Authenticatable
      */
 
     protected $fillable = [
-        'name', 'email', 'password','prenom', 'genre', 'entreprise', 'telephone', 'avatar'
+        
+        'name', 
+        'email', 
+        'password',
+        'prenom', 
+        'genre', 
+        'entreprise', 
+        'telephone', 
+        'avatar'
+
     ];
 
     /**
@@ -32,4 +41,10 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\VerifyUser');
     }
+
+    public function projects()
+    {
+        return $this->hasOne('App\Projects');
+    }
+
 }
