@@ -9,7 +9,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Utilisateur - Dashboard</title>
+  <title>Utilisateur - Tableau de bord</title>
+
+  <!-- ========== Favicon Icon ========== -->
+  <link rel="shortcut icon" href="assets/img/logo-prix-innovation.png" type="image/x-icon">
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -50,13 +53,11 @@
       <li class="nav-item active">
         <a class="nav-link" href="/">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Tableau de bord</span></a>
       </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
-
-
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
@@ -67,11 +68,7 @@
         <a class="nav-link collapsed" href="/profile">
           <span>Mon Profil</span>
         </a>
-
       </li>
-
-
-
 
     </ul>
     <!-- End of Sidebar -->

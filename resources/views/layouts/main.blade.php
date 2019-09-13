@@ -15,7 +15,7 @@
     <title>PRIX DE L’INNOVATION DU MINISTERE DU PETROLE DE L’ENERGIE ET DES ENERGIES RENOUVELABLES</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/logo-pimpeer-1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo-prix-innovation.png" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />

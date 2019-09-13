@@ -40,6 +40,12 @@ class ProjectController extends Controller
 
     	return view('projects/index6', array('user' => Auth::user()) );
     }
+    
+    public function index5()
+    {
+
+    	return view('projects/index5', array('user' => Auth::user()) );
+    }
 
 
     /**
