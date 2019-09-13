@@ -265,13 +265,13 @@
                                 <tr>
                                     <td class="content-block">
                                         <p>
-                                            Une fois que vous avez confirmé votre adresse email, vous pourrez commencer à déposer votre dossier sur votre compte en utilisant le mot de passe créé lors de votre inscription, ainsi que votre identifiant PIMPEER (Email).
+                                            Une fois que vous avez confirmé votre adresse email, vous pourrez commencer à déposer votre dossier sur votre compte en utilisant le mot de passe créé lors de votre inscription, ainsi que votre identifiant InnovMPEER (Email).
                                         </p>
                                         <p>
                                             CONFIRMER L&#39;ADRESSE EMAIL * Afin de protéger votre compte, le lien de validation est seulement valide pendant 24 heures.
                                         </p>
                                         <p>
-                                            Cordialement, Le Jury PIMPEER
+                                            Cordialement, Le Jury InnovMPEER
                                         </p>
                                     </td>
                                 </tr>

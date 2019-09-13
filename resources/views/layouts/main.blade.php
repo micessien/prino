@@ -143,7 +143,7 @@
                 </div>
                 <div class="modal-body text-center">
                     <h4>
-                        Bienvenu(e) sur le site du Prix d'innovation du <strong>MPEER</strong> <br>
+                        Bienvenu(e) sur le site du Prix de l'Innovation du <strong>MPEER</strong> <br>
                         Veuillez sélectionner votre catégorie
                     </h4>
                     <ul class="list-inline">

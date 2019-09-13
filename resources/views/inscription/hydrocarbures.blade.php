@@ -89,7 +89,7 @@
                                         <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
                                         <div class="col-md-11">
                                             <div class="form-group">
-                                                <input id="prenom" type="text" placeholder="Prénom" class="form-control{{ $errors->has('prenom') ? ' is-invalid' : '' }}" name="prenom" value="{{ old('prenom') }}" required autofocus>
+                                                <input id="prenom" type="text" placeholder="Prénom(s)" class="form-control{{ $errors->has('prenom') ? ' is-invalid' : '' }}" name="prenom" value="{{ old('prenom') }}" required autofocus>
 
                                                 @if ($errors->has('prenom'))
                                                     <span class="invalid-feedback" role="alert">
