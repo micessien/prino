@@ -35,6 +35,23 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row">
+                                        <div class="col-md-11 col-md-offset-1">
+                                            <div class="form-group">
+                                                <input id="entreprise" type="text" placeholder="Entreprise / Domaine d’activité" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" autofocus>
+
+                                                @if ($errors->has('entreprise'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('entreprise') }}</strong>
+                                                    </span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
                                         <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
                                         <div class="col-md-11">
                                             <div class="form-group">
@@ -43,57 +60,6 @@
                                                 @if ($errors->has('name'))
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $errors->first('name') }}</strong>
-                                                    </span>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
-                                        <div class="col-md-11">
-                                            <div class="form-group">
-                                                <input id="prenom" type="text" placeholder="Prénom" class="form-control{{ $errors->has('prenom') ? ' is-invalid' : '' }}" name="prenom" value="{{ old('prenom') }}" required autofocus>
-
-                                                @if ($errors->has('prenom'))
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $errors->first('prenom') }}</strong>
-                                                    </span>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row">
-                                            <div class="col-md-11 col-md-offset-1">
-                                                <div class="form-group">
-                                                    <input id="entreprise" type="text" placeholder="Entreprise" class="form-control{{ $errors->has('entreprise') ? ' is-invalid' : '' }}" name="entreprise" value="{{ old('entreprise') }}" autofocus>
-
-                                                    @if ($errors->has('entreprise'))
-                                                        <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $errors->first('entreprise') }}</strong>
-                                                        </span>
-                                                    @endif
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
-                                        <div class="col-md-11">
-                                            <div class="form-group">
-                                                <input id="telephone" type="text" placeholder="Téléphone" class="form-control{{ $errors->has('telephone') ? ' is-invalid' : '' }}" name="telephone" value="{{ old('telephone') }}" required autofocus>
-
-                                                @if ($errors->has('entreprise'))
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $errors->first('telephone') }}</strong>
                                                     </span>
                                                 @endif
                                             </div>
@@ -122,17 +88,51 @@
                                     <div class="row">
                                         <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
                                         <div class="col-md-11">
-                                        <div class="form-group">
-                                            <input id="password" type="password" placeholder="Mot de passe" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                                            <div class="form-group">
+                                                <input id="prenom" type="text" placeholder="Prénom" class="form-control{{ $errors->has('prenom') ? ' is-invalid' : '' }}" name="prenom" value="{{ old('prenom') }}" required autofocus>
 
-                                            @if ($errors->has('password'))
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $errors->first('password') }}</strong>
-                                                </span>
-                                            @endif
+                                                @if ($errors->has('prenom'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('prenom') }}</strong>
+                                                    </span>
+                                                @endif
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
+                                        <div class="col-md-11">
+                                            <div class="form-group">
+                                                <input id="password" type="password" placeholder="Mot de passe" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                                @if ($errors->has('password'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('password') }}</strong>
+                                                    </span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-1" style="line-height: 3;font-size: 20px;text-align: right;color: #ff0000;">*</div>
+                                        <div class="col-md-11">
+                                            <div class="form-group">
+                                                <input id="telephone" type="text" placeholder="Téléphone" class="form-control{{ $errors->has('telephone') ? ' is-invalid' : '' }}" name="telephone" value="{{ old('telephone') }}" required autofocus>
+
+                                                @if ($errors->has('telephone'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('telephone') }}</strong>
+                                                    </span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row">
