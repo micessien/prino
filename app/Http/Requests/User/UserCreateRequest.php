@@ -26,6 +26,7 @@ class UserCreateRequest extends FormRequest
         return [
             'name' => 'required|string|max:255',
             'prenom' => 'required|string|max:255',
+            'entreprise' => 'max:255',
             'genre' => 'required',
             'telephone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:8',
             'email' => 'required|email|max:255|unique:users,email',
