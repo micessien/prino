@@ -245,7 +245,7 @@
                                     <td class="content-block">
                                         <p>Bonjour {{ $user->prenom.' '.$user->name }},</p>
                                         <p>
-                                            <br>Nous vous remercions d’avoir ouvert un compte #PIMPEER, <br>Pour finir votre inscription, veuillez cliquer sur le bouton ci-dessous:
+                                            <br>Nous vous remercions d’avoir ouvert un compte #InnovMPEER, <br>Pour finir votre inscription, veuillez cliquer sur le bouton ci-dessous:
                                         </p>
                                     </td>
                                 </tr>
