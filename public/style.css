@@ -188,6 +188,11 @@ b, strong {
   padding-right: 40px;
 }
 
+.innovation-puce{
+  text-align: justify;
+  padding-left: 27% !important
+}
+
 .padding-top-160{
   padding-top: 160px !important
 }

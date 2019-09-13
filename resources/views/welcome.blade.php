@@ -22,9 +22,10 @@
                                  
                                 Le MPEER souhaite, à travers ce prix, favoriser l’émergence des nouvelles générations de chercheurs ou prodiges, en soutenant 
                                 leurs projets et innovations, dans les secteurs Hydrocarbures et Energies, en Côte d’Ivoire. <br>
-                                Ce prix est attribué dans chacune des deux (2) catégories suivantes : <br>
-                                - Innovation dans le secteur des Hydrocarbures <br>
-                                - Innovation dans le secteur de l’Energie. <br><br>
+                                Ce prix est attribué dans chacune des deux (2) catégories suivantes : </p>
+                                <p class="text-black text-600 innovation-puce">
+                                    - Innovation dans le secteur des Hydrocarbures <br> - Innovation dans le secteur de l’Energie.</p>
+                                <p class="text-black text-600">
                                 Pour chacun de ces deux prix, une somme de 10 000 000 FCFA et un accompagnement du Ministère pour la réalisation de votre projet sont à gagner. <br>
                                 Vous êtes jeunes, vous êtes une startup ou une association, venez faire valoir votre talent pour une exploitation durable et à moindre coût des ressources énergétiques de la Côte d’Ivoire. <br>
                                 Postulez, bonne chance à vous et que les meilleurs gagnent !
