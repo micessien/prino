@@ -16,16 +16,18 @@
                                 </a>
                             </h1>
                             <p class="text-black text-600">
-                                Le Prix de l’innovation (#InnovMPEER) vise à encourager, soutenir et valoriser l’innovation
-                                technologique, sociétale et de service pour le bien-être des populations. <br>
-                                Il a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
-                                prodiges, en soutenant leurs projets et innovations technologiques inhérents aux secteurs
-                                Hydrocarbures et Energies. <br><br>
-                                Ce prix est attribué dans chacune des catégories suivantes : <br>
-                                - innovation Hydrocarbures <br>
-                                - innovation Energie <br><br>
-                                Vous êtes jeunes, vous êtes une startup, une association, venez faire valoir votre savoir,
-                                votre talent pour une exploitation durable et à moindre coût des ressources énergétiques au bénéfice de la Côte d’Ivoire.
+                                Le Prix de l’innovation (#InnovMPEER), du Ministère du Pétrole, de l’Energie et des Energies Renouvelables (MPEER), vise à 
+                                encourager et soutenir l’innovation technologique, dans les secteurs de l’Energie et des Hydrocarbures, pour le bien-être des 
+                                populations ivoiriennes. <br><br>
+                                 
+                                Le MPEER souhaite, à travers ce prix, favoriser l’émergence des nouvelles générations de chercheurs ou prodiges, en soutenant 
+                                leurs projets et innovations, dans les secteurs Hydrocarbures et Energies, en Côte d’Ivoire. <br>
+                                Ce prix est attribué dans chacune des deux (2) catégories suivantes : <br>
+                                - Innovation dans le secteur des Hydrocarbures <br>
+                                - Innovation dans le secteur de l’Energie. <br><br>
+                                Pour chacun de ces deux prix, une somme de 10 000 000 FCFA et un accompagnement du Ministère pour la réalisation de votre projet sont à gagner. <br>
+                                Vous êtes jeunes, vous êtes une startup ou une association, venez faire valoir votre talent pour une exploitation durable et à moindre coût des ressources énergétiques de la Côte d’Ivoire. <br>
+                                Postulez, bonne chance à vous et que les meilleurs gagnent !
                             </p>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn circle btn-primary btn-vert btn-inscrire btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
