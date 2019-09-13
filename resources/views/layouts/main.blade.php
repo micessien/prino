@@ -136,7 +136,7 @@
     <!-- Start modal inscription -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
-            <div class="modal-content" style="background-image: url(assets/img/banner/bg-palm-1.jpg); background-repeat: no-repeat; background-size: auto; background-position: center;">
+            <div class="modal-content" style="background-image: url(assets/img/banner/bg-palm-1.png); background-repeat: no-repeat; background-size: auto; background-position: center;">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h3 class="modal-title" id="myModalLabel"></h3>

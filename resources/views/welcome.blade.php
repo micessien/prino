@@ -3,7 +3,7 @@
 @section('content')
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/bg-palm-1.jpg);">
+    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/bg-palm-1.png);">
         <div class="container">
             <div class="row">
                 <div class="content-box video-popup">
