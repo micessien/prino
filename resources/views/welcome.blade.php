@@ -18,11 +18,11 @@
                             <p class="text-black text-600">
                                 Le Prix de l’innovation (#InnovMPEER) vise à encourager, soutenir et valoriser l’innovation
                                 technologique, sociétale et de service pour le bien-être des populations. <br>
-                                Le PIMPEER a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
+                                Il a pour but de favoriser l’émergence de nouvelles générations de chercheurs ou
                                 prodiges, en soutenant leurs projets et innovations technologiques inhérents aux secteurs
                                 Hydrocarbures et Energies. <br><br>
-                                Ce prix de l’innovation est attribué dans chacune des catégories suivantes : <br>
-                                - innovation hydrocarbures <br>
+                                Ce prix est attribué dans chacune des catégories suivantes : <br>
+                                - innovation Hydrocarbures <br>
                                 - innovation Energie <br><br>
                                 Vous êtes jeunes, vous êtes une startup, une association, venez faire valoir votre savoir,
                                 votre talent pour une exploitation durable et à moindre coût des ressources énergétiques au bénéfice de la Côte d’Ivoire.

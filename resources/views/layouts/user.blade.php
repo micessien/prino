@@ -9,13 +9,20 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Utilisateur - Dashboard</title>
+  <title>Utilisateur - Tableau de bord</title>
+
+  <!-- ========== Favicon Icon ========== -->
+  <link rel="shortcut icon" href="assets/img/logo-prix-innovation.png" type="image/x-icon">
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <script src="https://cdn.tiny.cloud/1/przgmzfaioiisrc6rjnssfkp36q9iscbyi8az9573ti8fztu/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-  <script>tinymce.init({selector:'textarea'});</script>
+  <script>
+    tinymce.init({
+      selector: 'textarea'
+    });
+  </script>
   <!-- Custom styles for this template-->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
@@ -46,13 +53,11 @@
       <li class="nav-item active">
         <a class="nav-link" href="/">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Tableau de bord</span></a>
       </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
-
-
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
@@ -60,14 +65,10 @@
           <span>Postuler</span>
         </a>
 
-		<a class="nav-link collapsed" href="/profile">
-          <span>Mon Profile</span>
+        <a class="nav-link collapsed" href="/profile">
+          <span>Mon Profil</span>
         </a>
-
       </li>
-
-
-
 
     </ul>
     <!-- End of Sidebar -->
@@ -78,24 +79,24 @@
       <!-- Main Content -->
       <div id="content">
         @yield('content');
-        
+
       </div>
     </div>
-</div>
-<!-- End of Main Content -->
+  </div>
+  <!-- End of Main Content -->
 
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
-
+  <!-- Footer -->
+  <footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+        <span>Copyright &copy; Your Website 2019</span>
+      </div>
     </div>
-    <!-- End of Content Wrapper -->
+  </footer>
+  <!-- End of Footer -->
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->

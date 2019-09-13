@@ -35,7 +35,7 @@ class CreateProjectsTable extends Migration
             $table->string('fonctionoccupe')->nullable();
             $table->string('descriptifprojet')->nullable();
             $table->string('innovantprojet')->nullable();
-            $table->string('concurrent')->nullable();
+            // $table->string('concurrent')->nullable();
             $table->string('equipe')->nullable();
 
 
