@@ -258,7 +258,7 @@
                                 </tr>
                                 <tr>
                                     <td class="content-block">
-                                        Si le lien ci-dessus ne fonctionne pas, veuillez copier l'URL ci-dessous et collez-la dans un navigateur (Chrome, FireFox, Internet Explorer 11, Edge). <br>
+                                        Si le lien ci-dessus ne fonctionne pas, veuillez copier l'URL ci-dessous et collez-la dans un navigateur (Chrome, FireFox, Edge). <br>
                                         {{ url('users/confirmation-de-compte?token=').$verified->token }}
                                     </td>
                                 </tr>

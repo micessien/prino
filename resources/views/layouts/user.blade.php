@@ -23,7 +23,7 @@
       selector: 'textarea'
     });
   </script>
-  <!-- Custom styles for this template-->
+  <!-- Custom styles for this template -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 </head>
@@ -81,9 +81,13 @@
         @yield('content');
 
       </div>
+      <!-- End of Main Content -->
+
     </div>
+    <!-- End of Content Wrapper -->
+
   </div>
-  <!-- End of Main Content -->
+  <!-- End of Page Wrapper -->
 
   <!-- Footer -->
   <footer class="sticky-footer bg-white">
@@ -93,13 +97,7 @@
       </div>
     </div>
   </footer>
-  <!-- End of Footer -->
-
-  </div>
-  <!-- End of Content Wrapper -->
-
-  </div>
-  <!-- End of Page Wrapper -->
+  <!-- End of Footer -->  
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
@@ -125,22 +123,21 @@
     </div>
   </div>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
-  <!-- Core plugin JavaScript
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Core plugin JavaScript -->
+  <script src="assets/js/jquery.easing.min.js"></script>
 
-  Custom scripts for all pages-->
+  <!--Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-  <!-- Page level plugins
+  <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
 
-  <!-- Page level custom scripts 
+  <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
--->
 </body>
 
 </html>
