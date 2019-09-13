@@ -61,7 +61,7 @@
         </a>
 
 		<a class="nav-link collapsed" href="/profile">
-          <span>Mon Profile</span>
+          <span>Mon Profil</span>
         </a>
 
       </li>

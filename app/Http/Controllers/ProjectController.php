@@ -6,7 +6,7 @@ use Auth;
 
 use App\User;
 use App\Project;
-
+use App\Projects;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -18,8 +18,9 @@ class ProjectController extends Controller
      */
     public function index()
     {
-
-    	return view('projects/index', array('user' => Auth::user()) );
+        // dd(Auth::user());
+        $user = Auth::user();
+    	return view('projects/index', compact('user') );
     }
 
     public function index2()
@@ -34,6 +35,12 @@ class ProjectController extends Controller
     	return view('projects/index3', array('user' => Auth::user()) );
     }
 
+    public function index4()
+    {
+
+    	return view('projects/index6', array('user' => Auth::user()) );
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -45,26 +52,59 @@ class ProjectController extends Controller
         //
 
 
+        // dd(Auth::user());
 		$user = Auth::user();
 
 		$user = User::find($user->id);
 
+        if($user->projects!=null){
+            $user->projects->entite = $request->input('entite');
+            $user->projects->categorie = $request->input('categorie');
+            $user->projects->adresse = $request->input('adresse');
+            $user->projects->boite_postale = $request->input('boite_postale');
+            $user->projects->ville = $request->input('ville');
+            $user->projects->nombremploye = $request->input('nombremploye');
+            $user->projects->descriptifentreprise = $request->input('descriptifentreprise');
+            $user->projects->chiffredaffaire = $request->input('chiffredaffaire');
+            $user->projects->prixremporte = $request->input('prixremporte');
+            
+     
+            $user->save();
+            $user->projects->save();
+        }else{
+            $project =  $request->all();
+            $project['user_id'] =  $user->id;
+            Projects::create($project);
+            // $user->projects->entite = $request->input('entite');
+            // $user->projects->categorie = $request->input('categorie');
+            // $user->projects->adresse = $request->input('adresse');
+            // $user->projects->boite_postale = $request->input('boite_postale');
+            // $user->projects->ville = $request->input('ville');
+            // $user->projects->nombremploye = $request->input('nombremploye');
+            // $user->projects->descriptifentreprise = $request->input('descriptifentreprise');
+            // $user->projects->chiffredaffaire = $request->input('chiffredaffaire');
+            // $user->projects->prixremporte = $request->input('prixremporte');
+            
+     
+            // $user->save();
+            // $user->projects->save();
+        }
 
-        $user->projects->entite = $request->input('entite');
-        $user->projects->categorie = $request->input('categorie');
-        $user->projects->adresse = $request->input('adresse');
-        $user->projects->boite_postale = $request->input('boite_postale');
-        $user->projects->ville = $request->input('ville');
-        $user->projects->nombremploye = $request->input('nombremploye');
-        $user->projects->descriptifentreprise = $request->input('descriptifentreprise');
-        $user->projects->chiffredaffaire = $request->input('chiffredaffaire');
-        $user->projects->prixremporte = $request->input('prixremporte');
+        // $user->projects->entite = $request->input('entite');
+        // $user->projects->categorie = $request->input('categorie');
+        // $user->projects->adresse = $request->input('adresse');
+        // $user->projects->boite_postale = $request->input('boite_postale');
+        // $user->projects->ville = $request->input('ville');
+        // $user->projects->nombremploye = $request->input('nombremploye');
+        // $user->projects->descriptifentreprise = $request->input('descriptifentreprise');
+        // $user->projects->chiffredaffaire = $request->input('chiffredaffaire');
+        // $user->projects->prixremporte = $request->input('prixremporte');
         
  
-		$user->save();
-		$user->projects->save();
-
-    	return view('projects.index2', array('user' => Auth::user()) );
+		// $user->save();
+		// $user->projects->save();
+        return redirect()->route('projects.index2');
+    	// return view('projects.index2', array('user' => Auth::user()) );
 
     }
 
@@ -89,8 +129,8 @@ class ProjectController extends Controller
  
 		$user->save();
 		$user->projects->save();
-
-    	return view('projects.index3', array('user' => Auth::user()) );
+        return redirect()->route('projects.index3');
+    	// return view('projects.index3', array('user' => Auth::user()) );
 
     }
 
@@ -106,15 +146,16 @@ class ProjectController extends Controller
 		$user = User::find($user->id);
 
 
-        $user->projects->concurrent = $request->input('concurrent');
+        // $user->projects->concurrent = $request->input('concurrent');
         $user->projects->equipe = $request->input('equipe');
 
         
  
 		$user->save();
 		$user->projects->save();
-
-    	return view('projects.index4', array('user' => Auth::user()) );
+// die();
+return redirect()->route('projects.index4');
+    	// return view('projects.index6', array('user' => Auth::user()) );
 
     }
 
@@ -130,17 +171,18 @@ class ProjectController extends Controller
         $user = User::find($user->id);
         
 
-        dd($request->file('declarationfiscale'));
-        // $declarationfiscale = $request->file('declarationfiscale');
+       // dd($request->file('planfin'));
+        // dd($request->file('declarationfiscale'));
+        $file = $request->file('planfin');
 
 
-        // $destination_path = public_path().'/files';
-        // $extention = $declarationfiscale->getClientOriginalExtension();
+        $destination_path = public_path().'/files';
+        $extention = $file->getClientOriginalExtension();
 
 
-        // $declarationfiscale = $declarationfiscale->getClientOriginalName();
-        // $declarationfiscales = $declarationfiscales.'_'.time().'.'.$extention;
-        // $declarationfiscales->move($destination_path ,$declarationfiscales);
+        $files = $file->getClientOriginalName();
+        $fileName = $files.'_'.time().'.'.$extention;
+        $file->move($destination_path ,$fileName);
 
 
 		$user->save();
@@ -153,12 +195,12 @@ class ProjectController extends Controller
         // $user->projects->powerpoint = $request->input('powerpoint');
         
  
-		$user->save();
-        $user->projects->save();
+		// $user->save();
+        // $user->projects->save();
         
 
-
-    	return view('projects.index5', array('user' => Auth::user()) );
+        return redirect()->route('projects.index5');
+    	// return view('projects.index5', array('user' => Auth::user()) );
 
     }
 
