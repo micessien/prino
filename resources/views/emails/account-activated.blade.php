@@ -245,7 +245,7 @@
                                     <td class="content-block">
                                         <p>Bonjour {{ $user->prenom.' '.$user->name }},</p>
                                         <p>
-                                            <br>Nous vous remercions d’avoir ouvert un compte #InnovMPEER, <br>Pour finir votre inscription, veuillez cliquer sur le bouton ci-dessous:
+                                            <br>Nous vous remercions d’avoir ouvert un compte #InnovMPEER, <br>Pour finir votre inscription, veuillez cliquer sur « CONFIMER VOTRE COMPTE » ci-dessous:
                                         </p>
                                     </td>
                                 </tr>
@@ -258,17 +258,17 @@
                                 </tr>
                                 <tr>
                                     <td class="content-block">
-                                        Si vous ne parvenez pas à cliquer sur le lien, copiez cette URL et collez-la dans un navigateur. <br>
+                                        Si le lien ci-dessus ne fonctionne pas, veuillez copier l'URL ci-dessous et collez-la dans un navigateur (Chrome, FireFox, Internet Explorer 11, Edge). <br>
                                         {{ url('users/confirmation-de-compte?token=').$verified->token }}
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="content-block">
                                         <p>
-                                            Une fois que vous avez confirmé votre adresse email, vous pourrez commencer à déposer votre dossier sur votre compte en utilisant le mot de passe créé lors de votre inscription, ainsi que votre identifiant InnovMPEER (Email).
+                                            Dès la confirmation de votre adresse email, vous serez en mesure de remplir votre dossier de candidature sur votre compte en utilisant le mot de passe créé lors de votre inscription, ainsi que votre identifiant InnovMPEER (Email).
                                         </p>
                                         <p>
-                                            CONFIRMER L&#39;ADRESSE EMAIL * Afin de protéger votre compte, le lien de validation est seulement valide pendant 24 heures.
+                                            * Afin de protéger votre compte, le lien de validation est valable pendant 24 heures à comptez de l’heure de réception de ce message.
                                         </p>
                                         <p>
                                             Cordialement, Le Jury InnovMPEER
