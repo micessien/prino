@@ -1,18 +1,27 @@
 @extends('layouts.main')
 
-@section('content')
-<!-- Start Banner 
-============================================= -->
-<div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/12.jpg);">
-    <div class="container">
-        <div class="row justify-content-center padding-top-160">
-            <div class="col-md-12">
-                <div class="card card-register">
-                    <div class="card-header text-shadow-10 text-white"><h1>{{ __('Prix Energie') }}</h1></div>
+@section('style')
+    <style type="text/css">
+        .modal-backdrop {
+            z-index: 0 !important;
+        }
+    </style>
+@endsection
 
-                    <div class="card-body">
-                        <form method="POST" action="{{ route('users.store') }}" aria-label="{{ __('Register') }}" class="register">
-                            @csrf
+@section('content')
+
+<form method="POST" action="{{ route('users.store') }}" aria-label="{{ __('Register') }}" class="register">
+@csrf
+    <!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/12.jpg);">
+        <div class="container">
+            <div class="row justify-content-center padding-top-160">
+                <div class="col-md-12">
+                    <div class="card card-register">
+                        <div class="card-header text-shadow-10 text-white"><h1>{{ __('Prix Energie') }}</h1></div>
+
+                        <div class="card-body">
                             <input type="hidden" name="type" value="Energies">
                             <div class="row">
                                 <div class="col-md-6">
@@ -179,39 +188,55 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button>
-                                    <!-- <button data-toggle="modal" data-target="#myReglement" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button> -->
+                                    <!-- <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button> -->
+                                    <button data-toggle="modal" data-target="#myReglement" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button>
                                 </div>
                             </div>
                             <!-- Alert Message -->
                             <div class="col-md-12 alert-notification">
                                 <div id="message" class="alert-msg"></div>
-                            </div>
-                            <!-- Start modal inscription -->
-                            <div class="modal fade" id="myReglement" tabindex="-1" role="dialog">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title">Modal title</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>One fine body&hellip;</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div><!-- /.modal-content -->
-                                </div><!-- /.modal-dialog -->
-                            </div>
-                            <!-- /.End modal inscription -->
-                        </form>
+                            </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Banner -->
+    <!-- End Banner -->
+
+    <!-- Start modal inscription -->
+    <div class="modal fade" id="myReglement" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label style="font-size: 16px; color: #ff0000; font-weight: 600;">
+                                        <input type="checkbox" name="reglement" required /> Je déclare avoir lu et compris les conditions figurant au règlement du concours disponible
+                                            sous règlement et les accepter sans réserve. Je renonce à tout recours à l’encontre des
+                                            organisateurs et partenaires du concours, de leurs représentants ou des membres du jury. Je
+                                            certifie que tous les éléments fournis sont exacts et complets.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- /.End modal inscription -->
+</form>
 @endsection

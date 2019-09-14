@@ -3697,28 +3697,28 @@ footer.demo .copyright {
 }
 
 /* style :fullscreen */
-.modal-title {
+#myModal .modal-title {
   line-height: 2.428571;
   text-align: center;
   color: #ffffff
 }
 
-.modal-header {
+#myModal .modal-header {
   /* background-color: #85b921; */
   border-bottom: none;
 }
 
-.modal-header .close {
+#myModal .modal-header .close {
   font-size: 60px !important;
 }
-.modal-dialog {
+#myModal .modal-dialog {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.modal-content {
+#myModal .modal-content {
   height: auto;
   min-height: 100%;
   border-radius: 0;
