@@ -13,18 +13,18 @@
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="entite">Personne morale ou physique</label>
+                    <label for="entite"><span style="color:#ff0000">*</span> Personne morale ou physique</label>
                     <input type="text" name="entite" value="{{ old('entite',($user->projects!=null ? $user->projects->entite:'')) }}" class="form-control" id="entite" placeholder="entite">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="categorie">*Catégorie</label>
+                    <label for="categorie"><span style="color:#ff0000">*</span> Catégorie</label>
                     <input type="text" name="categorie" value="{{ old('categorie',($user->projects!=null ? $user->projects->categorie:'')) }}" class="form-control" id="categorie" placeholder="categorie">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="Adresse">Adresse</label>
+                    <label for="Adresse"><span style="color:#ff0000">*</span> Adresse</label>
                     <input type="text" name="adresse" value="{{ old('adresse',($user->projects!=null ? $user->projects->adresse:'')) }}" class="form-control" id="inputAddress" placeholder="1234 Main St">
                 </div>
                 <div class="form-group col-md-6">
@@ -35,24 +35,24 @@
             
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="boitepostal">*Ville </label>
+                    <label for="boitepostal"><span style="color:#ff0000">*</span> Ville </label>
                     <input name="ville" value="{{ old('ville',($user->projects!=null ? $user->projects->ville:'')) }}" type="text" class="form-control" id="ville" placeholder="20">
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="boitepostal">*Nombre d’employés à temps plein </label>
+                    <label for="boitepostal">Nombre d’employés à temps plein </label>
                     <input name="nombremploye" value="{{ old('nombremploye',($user->projects!=null ? $user->projects->nombremploye:'')) }}" type="text" class="form-control" placeholder="20">
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="boitepostal">*Descriptif de l’entreprise (le cas echeant) </label>
-                <textarea name="descriptifentreprise" value="{{ old('descriptifentreprise',($user->projects!=null ? $user->projects->descriptifentreprise:'')) }}" class="form-control" id="exampleFormControlTextarea1" rows="3">
-                </textarea>
+                <label for="boitepostal">Descriptif de l’entreprise (le cas echeant) </label>
+                <textarea name="descriptifentreprise" placeholder="Descriptif de l'entreprise (500 signes maximum espaces compris)" value="{{ old('descriptifentreprise',($user->projects!=null ? $user->projects->descriptifentreprise:'')) }}" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <p class="small"><i class="fa fa-exclamation-circle"></i> Ce descriptif pourra être utilisé pour les différentes communications sur le concours</p>
             </div>
 
             <div class="form-group">
-                <label for="boitepostal">*Chiffre d’affaire ( millions XOF) </label>
+                <label for="boitepostal">Chiffre d’affaire ( millions XOF)</label>
                 <input name="chiffredaffaire" value="{{ old('chiffredaffaire',($user->projects!=null ? $user->projects->chiffredaffaire:'')) }}" type="text" class="form-control" id="ville" placeholder="20">
             </div>
 
