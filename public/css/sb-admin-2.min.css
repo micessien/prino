@@ -11138,3 +11138,12 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+.message-alert-info{
+  margin-top: 10% !important;
+  width: 400px !important;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10% 4%;
+  font-size: 18px;
+}

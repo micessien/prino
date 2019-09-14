@@ -26,7 +26,7 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 text-center" style="margin-top: 25% !important">
+			<div class="col-md-12 text-center message-alert-info">
 				<p>Merci d&#39;avoir postulé au Prix Innovation du Ministère du Pétrole, de l’Energie et des Energies Renouvelables #PIMPEER édition 2019.</p>
 				<p>Votre candidature a bien été prise en compte par notre système et sera traitée prochainement.</p>
 				<p>Vous recevrez le 9 décembre 2019 la notification des finalistes au cas ou votre candidature est retenue.</p>

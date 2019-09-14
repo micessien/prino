@@ -12,7 +12,7 @@
   <title>Utilisateur - Tableau de bord</title>
 
   <!-- ========== Favicon Icon ========== -->
-  <link rel="shortcut icon" href="assets/img/logo-prix-innovation.png" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ asset('assets/img/logo-prix-innovation.png') }}" type="image/x-icon">
 
   <!-- Custom fonts for this template-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -42,7 +42,7 @@
       </a>
 
       <!-- Divider -->
-      <hr class="sidebar-divider my-0">
+      <hr class="sidebar-divider my-0" style="margin-top: 35px !important;">
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">

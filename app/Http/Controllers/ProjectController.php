@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-use App\Http\Requests;
-
 namespace App\Http\Controllers;
 
 use Auth;
@@ -11,6 +8,8 @@ use App\User;
 use App\Project;
 use App\Projects;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMail;
 
 class ProjectController extends Controller
 {
@@ -46,14 +45,17 @@ class ProjectController extends Controller
 
     public function index5()
     {
-
         return view('projects/index5', array('user' => Auth::user()));
     }
 
     public function index6()
     {
-
         return view('projects/index6', array('user' => Auth::user()));
+    }
+
+    public function index7()
+    {
+        return view('projects/index7', array('user' => Auth::user()));
     }
 
 
@@ -192,20 +194,23 @@ class ProjectController extends Controller
 
     public function create4(Request $request)
     {
-
         $user = Auth::user();
 
         $user = User::find($user->id);
 
+        // value for verify project
+        $verif = User::find($user->id)->projects;
+
         // dd($request->file('planfin'));
         // dd($request->file('declarationfiscale'));
+
         $this->validate($request, [
             'planfin' => 'required|file|mimes:docx,doc',
             'powerpoint' => 'required|file|mimes:pptx,ppt,pptm',
             'businessplan' => 'required|file|mimes:xlsx',
             'declarationfiscale' => 'file|mimes:ppt,pptx,doc,docx,pdf,xls,xlsx'
-
         ]);
+
 
         // Plan Fin 
         if ($request->has('planfin')) {
@@ -244,11 +249,22 @@ class ProjectController extends Controller
             $file->move($destination_path, $fileName);
             $user->projects->declarationfiscale = $destination_path . '/' . $fileName;
         }
-        $user->save();
-        $user->projects->save();
 
+        if ($verif->declarationfiscale != null || $verif->businessplan != null || $verif->planfin != null || $verif->powerpoint != null) {
 
-        return redirect()->route('projects.index5');
+            $user->save();
+            $user->projects->save();
+            
+            return redirect()->route('projects.index7');
+        }else {
+            $user->save();
+            $user->projects->save();
+
+            // Send email
+            Mail::to($user->email)->send(new SendMail($user));
+
+            return redirect()->route('projects.index5');
+        }
     }
 
     public function create5()
