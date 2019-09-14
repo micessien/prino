@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\User;
 
+use App\Rules\Captcha;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UserCreateRequest extends FormRequest
@@ -32,6 +33,7 @@ class UserCreateRequest extends FormRequest
             'email' => 'required|email|max:255|unique:users,email',
             'password' => 'required|min:4|same:password_confirmation',
             'password_confirmation' => 'required|min:4|same:password',
+            'g-recaptcha-response' => new Captcha(),
         ];
     }
 }
