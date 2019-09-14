@@ -68,5 +68,6 @@
                 <a href="{{ url('projects/index') }}" class="btn btn-primary">Retour</a>
                 <button type="submit" class="btn btn-primary">Suivant</button>
         </form>
+        </div>
 </div>
 @endsection

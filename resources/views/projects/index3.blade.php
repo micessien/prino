@@ -1,6 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
+
 <div class="container">
 
     <div class="alert alert-primary" role="alert">
