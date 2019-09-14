@@ -98,62 +98,45 @@ class ProjectController extends Controller
             $user->projects->facebook = $request->input('facebook');
             $user->projects->twitter = $request->input('twitter');
 
-
             $user->save();
             $user->projects->save();
         } else {
             $project =  $request->all();
             $project['user_id'] =  $user->id;
             Projects::create($project);
-
-
-
             // $user->save();
             // $user->projects->save();
         }
-
-
 
         // $user->save();
         // $user->projects->save();
         return redirect()->route('projects.index2');
         // return view('projects.index2', array('user' => Auth::user()) );
-
     }
 
 
     public function create2(Request $request)
     {
         //
-
-
         $user = Auth::user();
 
         $user = User::find($user->id);
 
-
-
         $this->validate($request, [
-
-            'telephone' => 'required',
+            'telephone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:8',
             'fonctionoccupe' => 'required',
-            'descriptifprojet' => 'required',
-            'innovantprojet' => 'required'
-
+            'descriptifprojet' => 'required|max:1500',
+            'innovantprojet' => 'required|max:500'
         ]);
-
 
         $user->projects->telephone = $request->input('telephone');
         $user->projects->fonctionoccupe = $request->input('fonctionoccupe');
         $user->projects->descriptifprojet = $request->input('descriptifprojet');
         $user->projects->innovantprojet = $request->input('innovantprojet');
 
-
-
         $user->save();
         $user->projects->save();
         return redirect()->route('projects.index3');
-
     }
 
 
@@ -161,42 +144,36 @@ class ProjectController extends Controller
     public function create3(Request $request)
     {
         //
-
-
         $user = Auth::user();
 
         $user = User::find($user->id);
 
+        $this->validate($request, [
+            'equipe' => 'max:300'
+        ]);
 
         $user->projects->equipe = $request->input('equipe');
-
-
 
         $user->save();
         $user->projects->save();
         // die();
         return redirect()->route('projects.index4');
         // return view('projects.index6', array('user' => Auth::user()) );
-
     }
 
     
     public function create44(Request $request)
     {
         //
-
-
         $user = Auth::user();
 
         $user = User::find($user->id);
 
         $this->validate($request, [
-
-            'reglementation' => 'required',
-            'stadedevelopement' => 'required',
-            'besoinfinancement' => 'required',
-            'repartitioncapitale' => 'required'
-
+            'reglementation' => 'max:500',
+            'stadedevelopement' => 'required|max:500',
+            'besoinfinancement' => 'required|max:1000',
+            'repartitioncapitale' => 'required|max:200'
         ]);
 
         $user->projects->reglementation = $request->input('reglementation');
@@ -204,14 +181,11 @@ class ProjectController extends Controller
         $user->projects->besoinfinancement = $request->input('besoinfinancement');
         $user->projects->repartitioncapitale = $request->input('repartitioncapitale');
 
-
-
         $user->save();
         $user->projects->save();
         // die();
         return redirect()->route('projects.index6');
         // return view('projects.index6', array('user' => Auth::user()) );
-
     }
 
 
@@ -223,19 +197,15 @@ class ProjectController extends Controller
 
         $user = User::find($user->id);
 
-
         // dd($request->file('planfin'));
         // dd($request->file('declarationfiscale'));
+        $this->validate($request, [
+            'planfin' => 'required|file|mimes:docx,doc',
+            'powerpoint' => 'required|file|mimes:pptx,ppt,pptm',
+            'businessplan' => 'required|file|mimes:xlsx',
+            'declarationfiscale' => 'file|mimes:ppt,pptx,doc,docx,pdf,xls,xlsx'
 
-
-        // $this->validate($request, [
-
-        //     'planfin' => 'required',
-        //     'powerpoint' => 'required',
-        //     'businessplan' => 'required',
-        //     'declarationfiscale' => 'required'
-
-        // ]);
+        ]);
 
         // Plan Fin 
         if ($request->has('planfin')) {
@@ -278,16 +248,11 @@ class ProjectController extends Controller
         $user->projects->save();
 
 
-
         return redirect()->route('projects.index5');
-
     }
 
     public function create5()
     {
-
-
-
         return view('home', array('user' => Auth::user()));
     }
 
