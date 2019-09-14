@@ -2,25 +2,20 @@
 
 @section('content')
 
-<div class="container">
-
-    <div class="alert alert-primary" role="alert">
-        Le Marche
+<div class="panel panel-default">
+    <div class="panel-heading" style="padding-bottom: 25px;">
+        <h3 class="panel-title">Le Marche</h3>
     </div>
-
-    <div class="row justify-content-center">
+    <div class="panel-body">
 
         <form action="/projects/create3" method="POST" enctype="multipart/form-data">
             {{ csrf_field()}}
 
-
             <div class="form-row">
-
                 <div class="form-group col-md-12">
-                    <label for="equipe">
-                        Combien de personnes comptez vous embaucher pour le développement de votre projet ?</label>
+                    <label for="equipe"> de personnes comptez vous embaucher pour le développement de votre projet ?</label>
                     <textarea name="equipe" value="{{ $user->projects->equipe }}" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif des compétences nécessaires au développement du projet (700 signes maximum espaces compris)">
-                                </textarea>
+                    </textarea>
                 </div>
 
                 <div class="form-group">
@@ -32,10 +27,11 @@
                     </div>
                 </div>
             </div>
-
+            
+            <a href="{{ url('projects/index2') }}" class="btn btn-primary">Retour</a>
             <button type="submit" class="btn btn-primary">Suivant</button>
         </form>
     </div>
-
 </div>
+
 @endsection
