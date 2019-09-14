@@ -167,8 +167,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <!-- <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button> -->
-                                    <button data-toggle="modal" data-target="#myReglement" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button>
+                                    <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button>
+                                    <!-- <button data-toggle="modal" data-target="#myReglement" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button> -->
                                 </div>
                             </div>
                             <!-- Alert Message -->
@@ -176,7 +176,7 @@
                                 <div id="message" class="alert-msg"></div>
                             </div>
                             <!-- Start modal inscription -->
-                            <div class="modal fade" id="myReglement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal fade" id="myReglement" tabindex="-1" role="dialog">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
