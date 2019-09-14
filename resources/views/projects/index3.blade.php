@@ -14,7 +14,12 @@
             <div class="form-row">
                 <div class="form-group col-md-12">
                     <label for="equipe"><span style="color:#ff0000">*</span> Combien de personnes comptez vous embaucher pour le développement de votre projet ?</label>
-                    <textarea required name="equipe" placeholder="Descriptif des compétences nécessaires au développement du projet (300 signes maximum espaces compris)" value="{{ $user->projects->equipe }}" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif des compétences nécessaires au développement du projet (700 signes maximum espaces compris)"></textarea>
+                    <textarea required name="equipe" placeholder="Descriptif des compétences nécessaires au développement du projet (300 signes maximum espaces compris)" value="" class="form-control{{ $errors->has('equipe') ? ' is-invalid' : '' }}" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif des compétences nécessaires au développement du projet (700 signes maximum espaces compris)">{{ old('equipe',($user->projects!=null ? $user->projects->equipe:'')) }}</textarea>
+                    @if ($errors->has('equipe'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('equipe') }}</strong>
+                        </span>
+                    @endif
                 </div>
             </div>
             <div class="form-group">

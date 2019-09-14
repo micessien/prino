@@ -11,23 +11,36 @@
                 <form action="/projects/create2" method="POST" enctype="multipart/form-data">
                         {{ csrf_field()}}
 
-
-
                         <div class="form-row">
                                 <div class="form-group col-md-6">
                                         <label for="telephone"><span style="color:#ff0000">*</span> Téléphone</label>
-                                        <input name="telephone" value="{{ $user->projects->telephone }}" type="text" class="form-control" id="telephone" placeholder="+225 00000000">
+                                        <input name="telephone" value="{{ $user->projects->telephone }}" type="text" class="form-control{{ $errors->has('telephone') ? ' is-invalid' : '' }}" id="telephone" placeholder="+225 00000000">
+                                        @if ($errors->has('telephone'))
+                                                <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('telephone') }}</strong>
+                                                </span>
+                                        @endif
                                 </div>
                                 <div class="form-group col-md-6">
                                         <label for="entite"><span style="color:#ff0000">*</span>Fonction occupée dans l’entreprise</label>
-                                        <input name="fonctionoccupe" value="{{ $user->projects->fonctionoccupe }}" type="text" class="form-control" id="entite" placeholder="entite">
+                                        <input name="fonctionoccupe" value="{{ $user->projects->fonctionoccupe }}" type="text" class="form-control{{ $errors->has('entite') ? ' is-invalid' : '' }}" id="entite" placeholder="entite">
+                                        @if ($errors->has('fonctionoccupe'))
+                                                <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('fonctionoccupe') }}</strong>
+                                                </span>
+                                        @endif
                                 </div>
                         </div>
 
                         <div class="form-row">
                                 <div class="form-group col-md-12">
                                         <label for="categorie"><span style="color:#ff0000">*</span> Descriptif du projet / de l’activité</label>
-                                        <textarea name="descriptifprojet" placeholder="Descriptif du projet (1500 signes maximum espaces compris)" value="{{ $user->projects->descriptifprojet }}" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif du projet (2500 signes maximum espaces compris)" required></textarea>
+                                        <textarea name="descriptifprojet" placeholder="Descriptif du projet (1500 signes maximum espaces compris)" value="" class="form-control{{ $errors->has('descriptifprojet') ? ' is-invalid' : '' }}" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif du projet (2500 signes maximum espaces compris)" required>{{ old('descriptifprojet',($user->projects!=null ? $user->projects->descriptifprojet:'')) }}</textarea>
+                                        @if ($errors->has('descriptifprojet'))
+                                                <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('descriptifprojet') }}</strong>
+                                                </span>
+                                        @endif
                                         <p class="small"><i class="fa fa-exclamation-circle"></i> Ce descriptif pourra être utilisé pour les différentes communications sur le concours</p>
                                 </div>
                         </div>
@@ -36,7 +49,12 @@
                         <div class="form-row">
                                 <div class="form-group col-md-12">
                                         <label for="Adresse"><span style="color:#ff0000">*</span> En quoi votre projet est-il innovant et bénéficie t-il au pays?</label>
-                                        <textarea name="innovantprojet" placeholder="Descriptif de l'innovation (500 signes maximum espaces compris)" value="{{ $user->projects->innovantprojet }}" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif de l’innovation (500 signes maximum espaces compris)"></textarea>
+                                        <textarea name="innovantprojet" placeholder="Descriptif de l'innovation (500 signes maximum espaces compris)" value="" class="form-control{{ $errors->has('innovantprojet') ? ' is-invalid' : '' }}" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif de l’innovation (500 signes maximum espaces compris)">{{ old('innovantprojet',($user->projects!=null ? $user->projects->innovantprojet:'')) }}</textarea>
+                                        @if ($errors->has('innovantprojet'))
+                                                <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('innovantprojet') }}</strong>
+                                                </span>
+                                        @endif
                                 </div>
                         </div>
                         <div class="form-group">

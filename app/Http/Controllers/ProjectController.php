@@ -64,13 +64,25 @@ class ProjectController extends Controller
      */
     public function create(Request $request)
     {
-        //
-
-
         // dd(Auth::user());
         $user = Auth::user();
 
         $user = User::find($user->id);
+
+        $this->validate($request, [
+            'entite' => 'required|max:255',
+            'categorie' => 'required|max:255',
+            'adresse' => 'required|max:255',
+            'boite_postale' => 'max:255',
+            'ville' => 'required|max:255',
+            'nombremploye' => 'max:255',
+            'descriptifentreprise' => 'max:500',
+            'chiffredaffaire' => 'max:255',
+            'prixremporte' => 'max:255',
+            'siteweb' => 'max:255',
+            'facebook' => 'max:255',
+            'twitter' => 'max:255',
+        ]);
 
         if ($user->projects != null) {
             $user->projects->entite = $request->input('entite');
