@@ -159,7 +159,7 @@
 
 <!-- Scroll button -->
 <a id="myScrollBtn-right" href="{{ url('/pdf/Calendrier_PDE19.pdf') }}" title="Télécharger le calendrié"><i class="fa fa-download"></i> Calendrier</a>
-<a id="myScrollBtn-left" href="{{ url('/pdf/PI-MPEER_Reglement des Prix_R9_11Sep2019.pdf') }}" title="Télécharger le reglement interieur"><i class="fa fa-download"></i> Règlement intérieur</a>
+<a id="myScrollBtn-left" href="{{ url('/pdf/Reglement-interieur-InnovMpeer.pdf') }}" title="Télécharger le reglement interieur"><i class="fa fa-download"></i> Règlement intérieur</a>
 <!-- /.Scroll button -->
 
 @endsection
