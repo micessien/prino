@@ -27,7 +27,7 @@
     <link href="assets/css/animate.css" rel="stylesheet" />
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
-    <link href="custom.css" rel="stylesheet">
+    <!-- <link href="custom.css" rel="stylesheet"> -->
     <link href="assets/css/roadmap.css" rel="stylesheet">
     <link href="assets/css/scroll-button.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
