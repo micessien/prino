@@ -11,16 +11,7 @@
                 <form action="/projects/create2" method="POST" enctype="multipart/form-data">
                         {{ csrf_field()}}
 
-                        <div class="form-row">
-                                <div class="form-group col-md-6">
-                                        <label for="entite">* M / Mme Prénoms Nom</label>
-                                        <input name="nomcomplet" value="{{ $user->projects->nomcomplet }}" type="text" class="form-control" id="entite" placeholder="Koffi Jean">
-                                </div>
-                                <div class="form-group col-md-6">
-                                        <label for="entite">* Email</label>
-                                        <input name="email" value="{{ $user->projects->email }}" type="text" class="form-control" id="entite" placeholder="ean@mail.com">
-                                </div>
-                        </div>
+
 
                         <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -28,7 +19,7 @@
                                         <input name="telephone" value="{{ $user->projects->telephone }}" type="text" class="form-control" id="telephone" placeholder="+225 00000000">
                                 </div>
                                 <div class="form-group col-md-6">
-                                        <label for="entite">*Fonction occupée dans l’entreprise</label>
+                                        <label for="entite"><span style="color:#ff0000">*</span>Fonction occupée dans l’entreprise</label>
                                         <input name="fonctionoccupe" value="{{ $user->projects->fonctionoccupe }}" type="text" class="form-control" id="entite" placeholder="entite">
                                 </div>
                         </div>
@@ -36,7 +27,7 @@
                         <div class="form-row">
                                 <div class="form-group col-md-12">
                                         <label for="categorie"><span style="color:#ff0000">*</span> Descriptif du projet / de l’activité</label>
-                                        <textarea name="descriptifprojet" placeholder="Descriptif du projet (1500 signes maximum espaces compris)" value="{{ $user->projects->descriptifprojet }}" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif du projet (2500 signes maximum espaces compris)"></textarea>
+                                        <textarea name="descriptifprojet" placeholder="Descriptif du projet (1500 signes maximum espaces compris)" value="{{ $user->projects->descriptifprojet }}" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif du projet (2500 signes maximum espaces compris)" required></textarea>
                                         <p class="small"><i class="fa fa-exclamation-circle"></i> Ce descriptif pourra être utilisé pour les différentes communications sur le concours</p>
                                 </div>
                         </div>

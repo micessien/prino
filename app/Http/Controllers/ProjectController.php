@@ -41,13 +41,19 @@ class ProjectController extends Controller
     public function index4()
     {
 
-        return view('projects/index6', array('user' => Auth::user()));
+        return view('projects/index4', array('user' => Auth::user()));
     }
 
     public function index5()
     {
 
         return view('projects/index5', array('user' => Auth::user()));
+    }
+
+    public function index6()
+    {
+
+        return view('projects/index6', array('user' => Auth::user()));
     }
 
 
@@ -132,18 +138,18 @@ class ProjectController extends Controller
 
         $this->validate($request, [
 
-            'nomcomplet' => 'required',
             'telephone' => 'required',
             'fonctionoccupe' => 'required',
-            'descriptifprojet' => 'required'
+            'descriptifprojet' => 'required',
+            'innovantprojet' => 'required'
 
         ]);
 
 
-        $user->projects->nomcomplet = $request->input('nomcomplet');
         $user->projects->telephone = $request->input('telephone');
         $user->projects->fonctionoccupe = $request->input('fonctionoccupe');
         $user->projects->descriptifprojet = $request->input('descriptifprojet');
+        $user->projects->innovantprojet = $request->input('innovantprojet');
 
 
 
@@ -180,11 +186,44 @@ class ProjectController extends Controller
     }
 
 
+    public function create44(Request $request)
+    {
+        //
+
+
+        $user = Auth::user();
+
+        $user = User::find($user->id);
+
+        $this->validate($request, [
+
+            'reglementation' => 'required',
+            'stadedevelopement' => 'required',
+            'besoinfinancement' => 'required',
+            'repartitioncapitale' => 'required'
+
+        ]);
+
+        // $user->projects->concurrent = $request->input('concurrent');
+        $user->projects->reglementation = $request->input('reglementation');
+        $user->projects->stadedevelopement = $request->input('stadedevelopement');
+        $user->projects->besoinfinancement = $request->input('besoinfinancement');
+        $user->projects->repartitioncapitale = $request->input('repartitioncapitale');
+
+
+
+        $user->save();
+        $user->projects->save();
+        // die();
+        return redirect()->route('projects.index6');
+        // return view('projects.index6', array('user' => Auth::user()) );
+
+    }
+
+
 
     public function create4(Request $request)
     {
-
-
 
         $user = Auth::user();
 
@@ -195,75 +234,97 @@ class ProjectController extends Controller
         // dd($request->file('declarationfiscale'));
 
 
-        $this->validate($request, [
+        // $this->validate($request, [
 
-            'planfin' => 'required',
-            'powerpoint' => 'required',
-            'businessplan' => 'required',
-            'declarationfiscale' => 'required'
+        //     'planfin' => 'required',
+        //     'powerpoint' => 'required',
+        //     'businessplan' => 'required',
+        //     'declarationfiscale' => 'required'
 
-        ]);
+        // ]);
 
         // Plan Fin 
-        $file = $request->file('planfin');
+        // $file = $request->file('planfin');
 
 
-        $destination_path = public_path() . '/files';
-        $extention = $file->getClientOriginalExtension();
+        // $destination_path = public_path() . '/files';
+        // $extention = $file->getClientOriginalExtension();
 
 
-        $files = $file->getClientOriginalName();
-        $fileName = $files . '_' . time() . '.' . $extention;
-        $file->move($destination_path, $fileName);
+        // $files = $file->getClientOriginalName();
+        // $fileName = $files . '_' . time() . '.' . $extention;
+        // $file->move($destination_path, $fileName);
+
+
 
         // Powerpoint
 
-        $file2 = $request->file('powerpoint');
+        // $file2 = $request->file('powerpoint');
 
 
-        $destination_path2 = public_path() . '/files';
-        $extention2 = $file2->getClientOriginalExtension();
+        // $destination_path2 = public_path() . '/files';
+        // $extention2 = $file2->getClientOriginalExtension();
 
 
-        $files2 = $file2->getClientOriginalName();
-        $fileName2 = $files2 . '_' . time() . '.' . $extention2;
-        $file2->move($destination_path2, $fileName2);
+        // $files2 = $file2->getClientOriginalName();
+        // $fileName2 = $files2 . '_' . time() . '.' . $extention2;
+        // $file2->move($destination_path2, $fileName2);
 
 
-        // Businessplan
-        $file3 = $request->file('businessplan');
+        // // Businessplan
+        // $file3 = $request->file('businessplan');
 
-        $destination_path3 = public_path() . '/files';
-        $extention3 = $file3->getClientOriginalExtension();
+        // $destination_path3 = public_path() . '/files';
+        // $extention3 = $file3->getClientOriginalExtension();
 
-        $files3 = $file3->getClientOriginalName();
-        $fileName3 = $files3 . '_' . time() . '.' . $extention3;
-        $file3->move($destination_path3, $fileName3);
-        // Declaration Fin
+        // $files3 = $file3->getClientOriginalName();
+        // $fileName3 = $files3 . '_' . time() . '.' . $extention3;
+        // $file3->move($destination_path3, $fileName3);
+        // // Declaration Fin
 
-        $file4 = $request->file('declarationfiscale');
+        // $file4 = $request->file('declarationfiscale');
 
-        $destination_path4 = public_path() . '/files';
-        $extention4 = $file4->getClientOriginalExtension();
+        // $destination_path4 = public_path() . '/files';
+        // $extention4 = $file4->getClientOriginalExtension();
 
 
-        $files4 = $file4->getClientOriginalName();
-        $fileName4 = $files4 . '_' . time() . '.' . $extention4;
-        $file4->move($destination_path4, $fileName4);
+        // $files4 = $file4->getClientOriginalName();
+        // $fileName4 = $files4 . '_' . time() . '.' . $extention4;
+        // $file4->move($destination_path4, $fileName4);
+
+        // $user->projects->planfin = $request->input('planfin');
+        // $user->projects->powerpoint = $request->input('powerpoint');
+        // $user->projects->businessplan = $request->input('businessplan');
+        // $user->projects->declarationfiscale = $request->input('declarationfiscale');
+
+
+        // $file = $request->file('planfin');
+        // $destination_path = public_path().'/files';
+
+        // Plan Fin 
+        // $file = $request->file('planfin');
+
+
+        // $destination_path = public_path() . '/files';
+        // $extention = $file->getClientOriginalExtension();
+
+
+        // $files = $file->getClientOriginalName();
+        // $fileName = $files . '_' . time() . '.' . $extention;
+        // $file->move($destination_path, $fileName);
+
+        $user->projects->planfin = $request->input('planfin');
+
+
+        $fileName = "fileName" . time() . '.' . request()->planfin->getClientOriginalExtension();
+
+        $files = $request->planfin->storeAs('logos', $fileName);
 
 
         $user->save();
         $user->projects->save();
 
 
-        // $user->projects->declarationfiscale = $request->input('declarationfiscale');
-        // $user->projects->businessplan = $request->input('businessplan');
-        // $user->projects->planfin = $request->input('planfin');
-        // $user->projects->powerpoint = $request->input('powerpoint');
-
-
-        // $user->save();
-        // $user->projects->save();
 
 
         return redirect()->route('projects.index5');
