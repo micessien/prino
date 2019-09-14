@@ -167,6 +167,18 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_KEY') }}"></div>
+                                        @if ($errors->has('g-recaptcha-response'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
                                     <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button>
                                     <!-- <button data-toggle="modal" data-target="#myReglement" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button> -->
                                 </div>
