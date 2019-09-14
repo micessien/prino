@@ -23,7 +23,7 @@ class CreateProjectsTable extends Migration
             $table->string('ville')->nullable();
             $table->string('chiffredaffaire')->nullable();
             $table->string('nombremploye')->nullable();
-            $table->string('descriptifentreprise')->nullable();
+            $table->text('descriptifentreprise')->nullable();
             $table->string('prixremporte')->nullable();
             $table->string('siteweb')->nullable();
             $table->string('facebook')->nullable();
@@ -33,16 +33,16 @@ class CreateProjectsTable extends Migration
             $table->string('nomcomplet')->nullable();
             $table->string('telephone')->nullable();
             $table->string('fonctionoccupe')->nullable();
-            $table->string('descriptifprojet')->nullable();
-            $table->string('innovantprojet')->nullable();
+            $table->text('descriptifprojet')->nullable();
+            $table->text('innovantprojet')->nullable();
             // $table->string('concurrent')->nullable();
-            $table->string('equipe')->nullable();
+            $table->text('equipe')->nullable();
 
 
-            $table->string('reglementation')->nullable();
-            $table->string('stadedevelopement')->nullable();
-            $table->string('besoinfinancement')->nullable();
-            $table->string('repartitioncapitale')->nullable();
+            $table->text('reglementation')->nullable();
+            $table->text('stadedevelopement')->nullable();
+            $table->text('besoinfinancement')->nullable();
+            $table->text('repartitioncapitale')->nullable();
 
 
             $table->string('declarationfiscale')->nullable();
