@@ -16,7 +16,9 @@
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/logo-prix-innovation.png" type="image/x-icon">
-
+    <!-- ========== rECAPTCHA ========== -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
