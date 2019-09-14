@@ -13,7 +13,7 @@
 
             <div class="form-row">
                 <div class="form-group col-md-12">
-                    <label for="equipe"> de personnes comptez vous embaucher pour le développement de votre projet ?</label>
+                    <label for="equipe"> Combien de personnes comptez vous embaucher pour le développement de votre projet ?</label>
                     <textarea name="equipe" value="{{ $user->projects->equipe }}" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif des compétences nécessaires au développement du projet (700 signes maximum espaces compris)">
                     </textarea>
                 </div>

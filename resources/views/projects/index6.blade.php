@@ -1,13 +1,12 @@
 @extends('layouts.user')
 
 @section('content')
-<div class="container">
 
-        <div class="alert alert-primary" role="alert">
-                Pièces Jointes
+<div class="panel panel-default">
+        <div class="panel-heading" style="padding-bottom: 25px;">
+                <h3 class="panel-title">Pièces Jointes</h3>
         </div>
-
-        <div class="row justify-content-center">
+        <div class="panel-body">
 
                 <form action="/projects/create4" method="POST" enctype="multipart/form-data">
                         {{ csrf_field()}}
@@ -34,11 +33,10 @@
                                 </div>
                         </div>
 
-
+                        <a href="{{ url('projects/index3') }}" class="btn btn-primary">Retour</a>
                         <button type="submit" class="btn btn-primary">Suivant</button>
                 </form>
         </div>
 </div>
-
 
 @endsection
