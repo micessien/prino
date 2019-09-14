@@ -41,7 +41,7 @@ class ProjectController extends Controller
     public function index4()
     {
 
-        return view('projects/index6', array('user' => Auth::user()));
+        return view('projects/index4', array('user' => Auth::user()));
     }
 
     public function index5()
