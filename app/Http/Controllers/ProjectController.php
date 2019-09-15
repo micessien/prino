@@ -73,7 +73,7 @@ class ProjectController extends Controller
 
         $this->validate($request, [
             'entite' => 'required|max:255',
-            'categorie' => 'required|max:255',
+            // 'categorie' => 'required|max:255',
             'adresse' => 'required|max:255',
             'boite_postale' => 'max:255',
             'ville' => 'required|max:255',
@@ -88,7 +88,7 @@ class ProjectController extends Controller
 
         if ($user->projects != null) {
             $user->projects->entite = $request->input('entite');
-            $user->projects->categorie = $request->input('categorie');
+            // $user->projects->categorie = $request->input('categorie');
             $user->projects->adresse = $request->input('adresse');
             $user->projects->boite_postale = $request->input('boite_postale');
             $user->projects->ville = $request->input('ville');

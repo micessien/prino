@@ -229,16 +229,14 @@
                                 <tr>
                                     <td class="content-block">
                                         <p>
-                                            Votre candidature a bien été prise en compte par notre système et sera traitée <br>
-                                            prochainement.
+                                            Votre candidature a bien été prise en compte par notre système et sera traitée prochainement.
                                         </p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="content-block">
                                         <p>
-                                            Vous recevrez le 9 décembre 2019 la notification des finalistes au cas ou votre candidature est <br>
-                                            retenue.
+                                            Vous recevrez le 9 décembre 2019 la notification des finalistes au cas ou votre candidature est retenue.
                                         </p>
                                     </td>
                                 </tr>

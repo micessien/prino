@@ -23,12 +23,13 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="categorie"><span style="color:#ff0000">*</span> Catégorie</label>
-                    <input required type="text" name="categorie" value="{{ old('categorie',($user->projects!=null ? $user->projects->categorie:'')) }}" class="form-control{{ $errors->has('categorie') ? ' is-invalid' : '' }}" id="categorie" placeholder="categorie">
+                    <p>{{ $user->type }}</p>
+                    <!-- <input required type="text" name="categorie" value="{{ old('categorie',($user->projects!=null ? $user->projects->categorie:'')) }}" class="form-control{{ $errors->has('categorie') ? ' is-invalid' : '' }}" id="categorie" placeholder="categorie">
                     @if ($errors->has('categorie'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('categorie') }}</strong>
                         </span>
-                    @endif
+                    @endif -->
                 </div>
             </div>
 
