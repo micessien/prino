@@ -4,7 +4,7 @@
 
 <div class="panel panel-default">
     <div class="panel-heading" style="padding-bottom: 25px;">
-        <h3 class="panel-title">Le Marche</h3>
+        <h3 class="panel-title">Le Marché</h3>
     </div>
     <div class="panel-body">
 
