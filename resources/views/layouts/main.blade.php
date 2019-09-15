@@ -200,6 +200,7 @@
         //     }
         // })
 </script>
+{!! NoCaptcha::renderJs() !!}
 </body>
 
 </html>

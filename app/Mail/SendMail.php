@@ -30,6 +30,6 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->from('noreply@micaeldie.com')->subject('Confirmation de depot des dossiers')->view('emails.inscription-validate')->with('user', $this->user);
+        return $this->from('innovation.prix@energie.gouv.ci')->subject('Confirmation de depot des dossiers')->view('emails.inscription-validate')->with('user', $this->user);
     }
 }

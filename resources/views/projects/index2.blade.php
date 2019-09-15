@@ -48,7 +48,7 @@
 
                         <div class="form-row">
                                 <div class="form-group col-md-12">
-                                        <label for="Adresse"><span style="color:#ff0000">*</span> En quoi votre projet est-il innovant et bénéficie t-il au pays?</label>
+                                        <label for="Adresse"><span style="color:#ff0000">*</span> En quoi votre projet est-il innovant ? Comment peut il être bénéfique au pays?</label>
                                         <textarea name="innovantprojet" placeholder="Descriptif de l'innovation (500 signes maximum espaces compris)" value="" class="form-control{{ $errors->has('innovantprojet') ? ' is-invalid' : '' }}" id="exampleFormControlTextarea1" rows="3" placeholder="Descriptif de l’innovation (500 signes maximum espaces compris)">{{ old('innovantprojet',($user->projects!=null ? $user->projects->innovantprojet:'')) }}</textarea>
                                         @if ($errors->has('innovantprojet'))
                                                 <span class="invalid-feedback" role="alert">

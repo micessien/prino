@@ -13,7 +13,7 @@
 
             <div class="form-row">
                 <div class="form-group col-md-12">
-                    <label for="reglementation">Votre projet est-il conforme à la règlementation de la Côte D’Ivoire ? Si Non Quel texte faut-il prendre pour le rendre conforme ?</label>
+                    <label for="reglementation">Votre projet est-il conforme à la règlementation en vigueur en Côte D’Ivoire ? Si non quel texte faudrait-il prendre pour le rendre conforme ?</label>
                     <textarea name="reglementation" placeholder="Descriptif du cadre règlementaire (500 signes maximum espaces compris)" value="" class="form-control{{ $errors->has('reglementation') ? ' is-invalid' : '' }}" id="reglementation" rows="3">{{ old('reglementation',($user->projects!=null ? $user->projects->reglementation:'')) }}</textarea>
                     @if ($errors->has('reglementation'))
                         <span class="invalid-feedback" role="alert">
@@ -49,7 +49,7 @@
 
             <div class="form-row">
                 <div class="form-group col-md-12">
-                    <label for="repartitioncapitale"><span style="color:#ff0000">*</span> Quelle est la répartition du capital Social ?</label>
+                    <label for="repartitioncapitale"><span style="color:#ff0000">*</span> Quelle est la répartition du capital social ?</label>
                     <textarea required name="repartitioncapitale" placeholder="Descriptif de la structure du Capital de l’entité (200 signes maximum espaces compris)" value="" class="form-control{{ $errors->has('repartitioncapitale') ? ' is-invalid' : '' }}" id="repartitioncapitale" rows="3">{{ old('repartitioncapitale',($user->projects!=null ? $user->projects->repartitioncapitale:'')) }}</textarea>
                     @if ($errors->has('repartitioncapitale'))
                         <span class="invalid-feedback" role="alert">

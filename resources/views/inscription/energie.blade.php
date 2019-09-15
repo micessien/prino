@@ -23,6 +23,11 @@
 
                             <div class="card-body">
                                 <input type="hidden" name="type" value="Energies">
+                                @if ($errors->has('g-recaptcha-response'))
+                                    <span class="invalid-feedback text-danger" role="alert">
+                                        <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                    </span>
+                                @endif
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="row">
@@ -219,8 +224,8 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="form-group">
-                                    <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_KEY') }}"></div>
+                                <div class="form-group{{ $errors->has('g-recaptcha-response') ? ' has-error' : '' }}">
+                                    <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.key') }}"></div>
                                     @if ($errors->has('g-recaptcha-response'))
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $errors->first('g-recaptcha-response') }}</strong>

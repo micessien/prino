@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use App\User;
 use Illuminate\Support\Facades\Mail;
 use Ramsey\Uuid\Uuid;
-use App\Rules\Captcha;
+// use App\Rules\Captcha;
 
 class UserController extends Controller
 {
@@ -47,7 +47,7 @@ class UserController extends Controller
     }
 
     public function store(UserCreateRequest $request)
-    {
+    {        
         $user = User::create([
             'genre' => $request->get('genre'),
             'name' => $request->get('name'),

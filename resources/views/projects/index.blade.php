@@ -14,7 +14,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="entite"><span style="color:#ff0000">*</span> Personne morale ou physique</label>
-                    <input required type="text" name="entite" value="{{ old('entite',($user->projects!=null ? $user->projects->entite:'')) }}" class="form-control{{ $errors->has('entite') ? ' is-invalid' : '' }}" id="entite" placeholder="entite">
+                    <input required type="text" name="entite" value="{{ old('entite',($user->projects!=null ? $user->projects->entite:'')) }}" class="form-control{{ $errors->has('entite') ? ' is-invalid' : '' }}" id="entite" placeholder="Entité: MPEER Sarl, Eva Traoré">
                     @if ($errors->has('entite'))
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $errors->first('entite') }}</strong>
