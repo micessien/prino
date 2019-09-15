@@ -22,7 +22,7 @@
                                         @endif
                                 </div>
                                 <div class="form-group col-md-6">
-                                        <label for="entite"><span style="color:#ff0000">*</span>Fonction occupée dans l’entreprise</label>
+                                        <label for="entite">Fonction occupée dans l’entreprise</label>
                                         <input name="fonctionoccupe" value="{{ $user->projects->fonctionoccupe }}" type="text" class="form-control{{ $errors->has('entite') ? ' is-invalid' : '' }}" id="entite" placeholder="entite">
                                         @if ($errors->has('fonctionoccupe'))
                                                 <span class="invalid-feedback" role="alert">

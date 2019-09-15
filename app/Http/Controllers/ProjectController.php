@@ -126,7 +126,7 @@ class ProjectController extends Controller
 
         $this->validate($request, [
             'telephone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:8',
-            'fonctionoccupe' => 'required',
+            'fonctionoccupe' => 'max:225',
             'descriptifprojet' => 'required|max:1500',
             'innovantprojet' => 'required|max:500'
         ]);
