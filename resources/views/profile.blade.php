@@ -52,7 +52,7 @@
 
 
                 <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
-                <input type="submit" class="pull-right btn btn-sm btn-primary">
+                <input type="submit" value="Modifier" class="pull-right btn btn-sm btn-primary">
             </form>
         </div>
     </div>

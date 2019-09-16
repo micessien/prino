@@ -75,7 +75,7 @@
                 @if($message = Session::get('success'))
                     <p>{{$message}}</p>
                 @endif
-                <form method="post" action="{{ route('contact.store') }}">
+                <form method="post" action="#">
                     {{ csrf_field() }}
                     <div class="col-md-12">
                         <div class="row">
@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-md-12">
                         <div class="row">
-                            <button type="submit">
+                            <button type="button">
                                 Envoyer Votre Message <i class="fa fa-paper-plane"></i>
                             </button>
                         </div>

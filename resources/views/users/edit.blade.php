@@ -8,6 +8,6 @@
     <input type="email" name="email"  value="{{ $user->email }}" />
     <input type="password" name="password" />
     <input type="password" name="password_confirmation" />
-    <button type="submit">Send</button>
+    <button type="submit">Enregistrer</button>
 </form>
 @endsection
