@@ -206,8 +206,8 @@ class ProjectController extends Controller
 
         $this->validate($request, [
             'planfin' => 'required|file|mimes:docx,doc',
-            'powerpoint' => 'required|file|mimes:pptx,ppt,pptm',
-            'businessplan' => 'required|file|mimes:xlsx',
+            'powerpoint' => 'required|file',
+            'businessplan' => 'required|file|mimes:xlsx,xls',
             'declarationfiscale' => 'file|mimes:ppt,pptx,doc,docx,pdf,xls,xlsx'
         ]);
 

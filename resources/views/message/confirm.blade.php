@@ -9,7 +9,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
                         <p><i class="fa fa-thumbs-up"></i></p>
-                        <h4 style="text-transform: none">Un mail vous a été envoyé à votre adresse, veuillez-vous connecter pour valider votre compte afin de remplir le dossier de candidature !</h4>
+                        <h4 style="text-transform: none">Un mail vous a été envoyé à votre adresse, veuillez-vous connecter pour valider votre compte afin de remplir le dossier de candidature ! <br> Si vous ne retrouvez pas le courriel, vérifiez vos spams s'il vous plaît !</h4>
                     </div>
                 </div>
             </div>
