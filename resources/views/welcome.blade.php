@@ -3,35 +3,38 @@
 @section('content')
 <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/bg-palm-1.png);">
-        <div class="container">
-            <div class="row">
-                <div class="content-box video-popup">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="content">
-                            <!--made by vipul mirajkar thevipulm.appspot.com-->
-                            <h1>
-                                <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTÈRE", "DU PÉTROLE, DE L’ENERGIE ET", "DES ÉNERGIES RENOUVELABLES" ]'>
-                                    <span class="wrap"></span>
-                                </a>
-                            </h1>
-                            <p class="text-black text-600">
-                                Le Prix de l’innovation (#InnovMPEER), du Ministère du Pétrole, de l’Energie et des Energies Renouvelables (MPEER), vise à 
-                                encourager et soutenir l’innovation technologique, dans les secteurs de l’Energie et des Hydrocarbures, pour le bien-être des 
-                                populations ivoiriennes. <br><br>
-                                 
-                                Le MPEER souhaite, à travers ce prix, favoriser l’émergence des nouvelles générations de chercheurs ou prodiges, en soutenant 
-                                leurs projets et innovations, dans les secteurs Hydrocarbures et Energies, en Côte d’Ivoire. <br>
-                                Ce prix est attribué dans chacune des deux (2) catégories suivantes : </p>
-                                <p class="text-black text-600 innovation-puce">
-                                    - Innovation dans le secteur des Hydrocarbures <br> - Innovation dans le secteur de l’Energie.</p>
-                                <p class="text-black text-600">
-                                Pour chacun de ces deux prix, une somme de 10 000 000 FCFA et un accompagnement du Ministère pour la réalisation de votre projet sont à gagner. <br>
-                                Vous êtes jeunes, vous êtes une startup ou une association, venez faire valoir votre talent pour une exploitation durable et à moindre coût des ressources énergétiques de la Côte d’Ivoire. <br>
-                                Postulez, bonne chance à vous et que les meilleurs gagnent !
-                            </p>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn circle btn-primary btn-vert btn-inscrire btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
+<div class="banner-area auto-height text-center text-normal text-light shadow dark-hard bg-fixed" style="background-image: url(assets/img/banner/bg-palm-1.png);">
+    <div class="container">
+        <div class="row">
+            <div class="content-box video-popup">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="content">
+                        <div>
+                            <p style="color: #c00d0e" id="demoCountdown"></p>
+                        </div>
+                        <!--made by vipul mirajkar thevipulm.appspot.com-->
+                        <h1>
+                            <a href="" class="typewrite" data-period="2000" data-type='[ "PRIX DE L’INNOVATION DU MINISTÈRE", "DU PÉTROLE, DE L’ENERGIE ET", "DES ÉNERGIES RENOUVELABLES" ]'>
+                                <span class="wrap"></span>
+                            </a>
+                        </h1>
+                        <p class="text-black text-600">
+                            Le Prix de l’innovation (#InnovMPEER), du Ministère du Pétrole, de l’Energie et des Energies Renouvelables (MPEER), vise à
+                            encourager et soutenir l’innovation technologique, dans les secteurs de l’Energie et des Hydrocarbures, pour le bien-être des
+                            populations ivoiriennes. <br><br>
+                             
+                            Le MPEER souhaite, à travers ce prix, favoriser l’émergence des nouvelles générations de chercheurs ou prodiges, en soutenant
+                            leurs projets et innovations, dans les secteurs Hydrocarbures et Energies, en Côte d’Ivoire. <br>
+                            Ce prix est attribué dans chacune des deux (2) catégories suivantes : </p>
+                        <p class="text-black text-600 innovation-puce">
+                            - Innovation dans le secteur des Hydrocarbures <br> - Innovation dans le secteur de l’Energie.</p>
+                        <p class="text-black text-600">
+                            Pour chacun de ces deux prix, une somme de 10 000 000 FCFA et un accompagnement du Ministère pour la réalisation de votre projet sont à gagner. <br>
+                            Vous êtes jeunes, vous êtes une startup ou une association, venez faire valoir votre talent pour une exploitation durable et à moindre coût des ressources énergétiques de la Côte d’Ivoire. <br>
+                            Postulez, bonne chance à vous et que les meilleurs gagnent !
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn circle btn-primary btn-vert btn-inscrire btn-lg padding-left-right" data-toggle="modal" data-target="#myModal">
                             S'inscrire
                         </button>
                         <p>
@@ -73,7 +76,7 @@
             <div class="col-md-8 contact-form">
                 <h2>Parlons de vos préoccupations</h2>
                 @if($message = Session::get('success'))
-                    <p>{{$message}}</p>
+                <p>{{$message}}</p>
                 @endif
                 <form method="post" action="#">
                     {{ csrf_field() }}
@@ -82,7 +85,7 @@
                             <div class="form-group">
                                 <input class="form-control" name="name" placeholder="Nom*" type="text">
                                 @if ($errors->has('name'))
-                                    <span class="alert-error text-danger">{{ $errors->first('name') }}</span>
+                                <span class="alert-error text-danger">{{ $errors->first('name') }}</span>
                                 @endif
                             </div>
                         </div>
@@ -92,7 +95,7 @@
                             <div class="form-group">
                                 <input class="form-control" name="email" placeholder="Email*" type="email">
                                 @if ($errors->has('email'))
-                                    <span class="alert-error text-danger">{{ $errors->first('email') }}</span>
+                                <span class="alert-error text-danger">{{ $errors->first('email') }}</span>
                                 @endif
                             </div>
                         </div>
@@ -100,7 +103,7 @@
                             <div class="form-group">
                                 <input class="form-control" name="phone" placeholder="Telephone" type="text">
                                 @if ($errors->has('phone'))
-                                    <span class="alert-error text-danger">{{ $errors->first('phone') }}</span>
+                                <span class="alert-error text-danger">{{ $errors->first('phone') }}</span>
                                 @endif
                             </div>
                         </div>
@@ -110,7 +113,7 @@
                             <div class="form-group comments">
                                 <textarea class="form-control" name="commentaire" placeholder="Parlons de vos préoccupations *"></textarea>
                                 @if ($errors->has('commentaire'))
-                                    <span class="alert-error text-danger">{{ $errors->first('commentaire') }}</span>
+                                <span class="alert-error text-danger">{{ $errors->first('commentaire') }}</span>
                                 @endif
                             </div>
                         </div>

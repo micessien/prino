@@ -22,14 +22,17 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148032140-1
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148032140-1
 "></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-148032140-1');
-</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-148032140-1');
+  </script>
 
 </head>
 
@@ -102,7 +105,7 @@
       </div>
     </div>
   </footer>
-  <!-- End of Footer -->  
+  <!-- End of Footer -->
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded" href="#page-top">
@@ -122,14 +125,13 @@
         <div class="modal-body">Sélectionnez "Déconnexion" ci-dessous si vous êtes prêt à mettre fin à votre session en cours.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="{{ route('logout') }}"
-              onclick="event.preventDefault();
+          <a class="btn btn-primary" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
-              {{ __('Déconnexion') }}
+            {{ __('Déconnexion') }}
           </a>
 
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-              @csrf
+            @csrf
           </form>
         </div>
       </div>
@@ -141,6 +143,38 @@
 
   <!-- Core plugin JavaScript -->
   <script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
+  <script>
+    if (window.location.pathname === "/home") {
+      // Set the date we're counting down to
+      var countDownDate = new Date("Nov 16, 2019 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demoCountdown"
+        document.getElementById("demoCountdown").innerHTML = "Il ne vous reste plus que " + "<strong>" + days + "jours " + hours + "H " +
+          minutes + "min " + seconds + "sec " + "</strong>" + " pour finaliser votre inscription.";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demoCountdown").innerHTML = "Application clôturée, rendez-vous l'année prochaine, Merci !";
+        }
+      }, 1000);
+    }
+  </script>
 </body>
 
 </html>
