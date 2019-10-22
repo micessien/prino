@@ -212,7 +212,7 @@
 
             // Display the result in the element with id="demoCountdown"
             document.getElementById("demoCountdown").innerHTML = "Il ne vous reste plus que " + "<strong>" + days + "jours " + hours + "H " +
-                minutes + "min " + seconds + "sec " + "</strong>" + " pour finaliser votre inscription.";
+                minutes + "min " + seconds + "sec " + "</strong>" + " pour finaliser le dépôt de votre dossier.";
 
             // If the count down is finished, write some text
             if (distance < 0) {

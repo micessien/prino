@@ -10,7 +10,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="content">
                         <div>
-                            <p style="color: #c00d0e" id="demoCountdown"></p>
+                            <p id="demoCountdown"></p>
                         </div>
                         <!--made by vipul mirajkar thevipulm.appspot.com-->
                         <h1>
