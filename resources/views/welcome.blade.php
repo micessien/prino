@@ -9,7 +9,8 @@
             <div class="content-box video-popup">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="content">
-                        <div>
+                        <div class="col-md-12 contentCountdown">
+                            <h4>Clôture de dépôt des dossiers de candidature dans</h4>
                             <p id="demoCountdown"></p>
                         </div>
                         <!--made by vipul mirajkar thevipulm.appspot.com-->

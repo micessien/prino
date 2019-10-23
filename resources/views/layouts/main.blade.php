@@ -30,6 +30,7 @@
     <link href="assets/css/bootsnav.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
     <!-- <link href="custom.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="assets/css/common-css/jquery.classycountdown.css" /> -->
     <link href="assets/css/roadmap.css" rel="stylesheet">
     <link href="assets/css/scroll-button.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet" />
@@ -190,6 +191,11 @@
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/typewriter.js"></script>
+    <!-- Count down -->
+    <!-- <script src="assets/js/common-js/jquery.classycountdown.js"></script>
+    <script src="assets/js/common-js/jquery.knob.js"></script>
+    <script src="assets/js/common-js/jquery.throttle.js"></script>
+    <script src="assets/js/common-js/scripts.js"></script> -->
 
     <script>
         // Set the date we're counting down to
@@ -210,14 +216,29 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            // Display the result in the element with id="demoCountdown"
-            document.getElementById("demoCountdown").innerHTML = "Il ne vous reste plus que " + "<strong>" + days + "jours " + hours + "H " +
-                minutes + "min " + seconds + "sec " + "</strong>" + " pour finaliser le dépôt de votre dossier.";
+            if (window.location.pathname === "/energie" || window.location.pathname === "/hydrocarbures") {
+                var content = "Il ne vous reste plus que " + "<strong>" + days + " jours " + hours + " H " +
+                    minutes + " min " + seconds + " sec " + "</strong>" + " pour finaliser le dépôt de votre dossier.";
+            } else {
+                // Display the result in the element with id="demoCountdown"
+                var content = '<div class="time-sec circle-border-main"><h3 class="main-time">' + days + '</h3> <span>Jours</span></div>' +
+                    '<div class="time-sec circle-border-middle"><h3 class="main-time">' + hours + '</h3> <span>H</span></div>' +
+                    '<div class="time-sec circle-border-light"><h3 class="main-time"> ' +
+                    minutes + '</h3> <span>min</span></div>' +
+                    '<div class="time-sec circle-border-strong"><h3 class="main-time">' + seconds + '</h3> <span>sec</span></div>';
+            }
+            document.getElementById("demoCountdown").innerHTML = content;
 
             // If the count down is finished, write some text
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demoCountdown").innerHTML = "Application clôturée, rendez-vous l'année prochaine, Merci !";
+                // Display the result in the element with id="demoCountdown"
+                var textError = "Application clôturée, rendez-vous l'année prochaine, Merci !";
+                var content = '<div class="time-sec"><h3 class="main-time">00</h3> <span>Jours</span></div>' +
+                    '<div class="time-sec"><h3 class="main-time">00</h3> <span>H</span></div>' +
+                    '<div class="time-sec"><h3 class="main-time">00</h3> <span>min</span></div>' +
+                    '<div class="time-sec"><h3 class="main-time">00</h3> <span>sec</span></div>';
+                document.getElementById("demoCountdown").innerHTML = textError;
             }
         }, 1000);
         // $('.owl-carousel').owlCarousel({

@@ -3817,9 +3817,58 @@ form.register input:-ms-input-placeholder {
   margin-bottom: 6%;
 }
 
+/* CountDown style */
+.contentCountdown h4 {
+  color: rgb(52, 73, 94);
+}
 p#demoCountdown {
-  color: #c00d0e;
-  border: 2px solid rgba(169, 68, 66, 0.33);
   margin-bottom: 30px;
-  padding: 10px;
+  color: #ff0000;
+}
+
+p#demoCountdown .time-sec {
+  display: inline-block;
+  border: 10px solid;
+  border-radius: 50%;
+  width: 19%;
+  padding: 3%;
+  margin: 7px;
+}
+
+p#demoCountdown .time-sec h3 {
+  margin: 0px;
+  font-size: 45px;
+}
+
+p#demoCountdown .time-sec h3,
+p#demoCountdown .time-sec span {
+  color: rgb(52, 73, 94);
+}
+
+.circle-border-main {
+  border-color: #e6792b !important;
+}
+
+.circle-border-middle {
+  border-color: #ff8730 !important;
+}
+
+.circle-border-strong {
+  border-color: #ff3f24 !important;
+}
+
+.circle-border-light {
+  border-color: #ffb724 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  p#demoCountdown .time-sec {
+    text-align: center;
+  }
+
+  p#demoCountdown .time-sec h3,
+  p#demoCountdown .time-sec span {
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }

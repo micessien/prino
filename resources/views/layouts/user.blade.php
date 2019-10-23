@@ -164,8 +164,8 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demoCountdown"
-        document.getElementById("demoCountdown").innerHTML = "Il ne vous reste plus que " + "<strong>" + days + "jours " + hours + "H " +
-          minutes + "min " + seconds + "sec " + "</strong>" + " pour finaliser le dépôt de votre dossier.";
+        document.getElementById("demoCountdown").innerHTML = "Il ne vous reste plus que " + "<strong>" + days + " jours " + hours + " H " +
+          minutes + " min " + seconds + " sec " + "</strong>" + " pour finaliser le dépôt de votre dossier.";
 
         // If the count down is finished, write some text
         if (distance < 0) {

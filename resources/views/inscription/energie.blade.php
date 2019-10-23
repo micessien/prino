@@ -32,7 +32,7 @@
                                 @endif
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p style="color: #c00d0e" id="demoCountdown"></p>
+                                        <p id="demoCountdown"></p>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="row">
