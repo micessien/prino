@@ -238,7 +238,7 @@
                     '<div class="time-sec"><h3 class="main-time">00</h3> <span>H</span></div>' +
                     '<div class="time-sec"><h3 class="main-time">00</h3> <span>min</span></div>' +
                     '<div class="time-sec"><h3 class="main-time">00</h3> <span>sec</span></div>';
-                document.getElementById("demoCountdown").innerHTML = textError;
+                document.getElementById("demoCountdown").innerHTML = content;
             }
         }, 1000);
         // $('.owl-carousel').owlCarousel({
