@@ -163,7 +163,7 @@ class ProjectController extends Controller
         // return view('projects.index6', array('user' => Auth::user()) );
     }
 
-    
+
     public function create44(Request $request)
     {
         //
@@ -206,7 +206,7 @@ class ProjectController extends Controller
 
         $this->validate($request, [
             'planfin' => 'required|file|mimes:docx,doc',
-            'powerpoint' => 'required|file',
+            'powerpoint' => 'required|file|mimes:ppt,pptx,doc,docx,pdf,xls,xlsx',
             'businessplan' => 'required|file|mimes:xlsx,xls',
             'declarationfiscale' => 'file|mimes:ppt,pptx,doc,docx,pdf,xls,xlsx'
         ]);
@@ -254,9 +254,9 @@ class ProjectController extends Controller
 
             $user->save();
             $user->projects->save();
-            
+
             return redirect()->route('projects.index7');
-        }else {
+        } else {
             $user->save();
             $user->projects->save();
 
