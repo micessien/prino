@@ -10,7 +10,8 @@
 
 @section('content')
 <div class="bg-real bg-fixed" style="height: auto; min-height: 100%; background-image: url(assets/img/banner/12.jpg)">
-    <form method="POST" action="{{ route('users.store') }}" aria-label="{{ __('Register') }}" class="register">
+    <!-- <form method="POST" action="{{ route('users.store') }}" aria-label="{{ __('Register') }}" class="register"> -->
+    <form class="register">
         @csrf
         <!-- Start Banner 
         ============================================= -->
@@ -172,8 +173,8 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <!-- <button type="submit" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Je termine') }}</button> -->
-                                        <a href="#" data-toggle="modal" data-target="#myReglement" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Suivant') }}</a>
+                                        <!-- <a href="#" data-toggle="modal" data-target="#myReglement" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Suivant') }}</a> -->
+                                        <a href="javascript:void(0)" class="btn btn-primary btn-vert btn-inscrire btn-lg">{{ __('Suivant') }}</a>
                                     </div>
                                 </div>
                                 <!-- Alert Message -->

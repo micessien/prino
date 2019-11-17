@@ -74,7 +74,8 @@
                     <ul>
                         @guest
                         <li class="nav-item">
-                            <button class="nav-link" data-toggle="modal" data-target="#myModal">{{ __('S \'Inscrire') }}</button>
+                            <!-- <button class="nav-link" data-toggle="modal" data-target="#myModal">{{ __('S \'Inscrire') }}</button> -->
+                            <button class="nav-link" title="Candidatures clôturées. Merci pour votre participation.">{{ __('S \'Inscrire') }}</button>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Connexion') }}</a>
@@ -234,7 +235,7 @@
                 clearInterval(x);
                 // Display the result in the element with id="demoCountdown"
                 var textError = "Application clôturée, rendez-vous l'année prochaine, Merci !";
-                var content = '<div class="time-sec"><h3 class="main-time">00</h3> <span>Jours</span></div>' +
+                var content = '<div class="time-sec"><h3 class="main-time">00</h3> <span>Jour</span></div>' +
                     '<div class="time-sec"><h3 class="main-time">00</h3> <span>H</span></div>' +
                     '<div class="time-sec"><h3 class="main-time">00</h3> <span>min</span></div>' +
                     '<div class="time-sec"><h3 class="main-time">00</h3> <span>sec</span></div>';
